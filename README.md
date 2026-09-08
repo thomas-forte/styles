@@ -4,7 +4,7 @@ Import from `@thomas-forte/styles` only — do not deep-import package internals
 
 ## Install
 
-Published to GitHub Packages. Even for a public package, the npm registry requires authentication to install (a classic PAT with `read:packages`).
+Published to GitHub Packages (`read:packages` PAT required).
 
 ```bash
 # .npmrc
@@ -23,39 +23,29 @@ npm install @thomas-forte/styles
 | `react-router` | `^8.0.0` |
 | `tailwindcss` | `^4.0.0` |
 
-In the consumer CSS entry (Tailwind v4):
-
 ```css
 @import "tailwindcss";
 @import "@thomas-forte/styles/theme.css";
 @source "../node_modules/@thomas-forte/styles/dist";
 ```
 
-(Adjust `@source` to wherever the installed package lives.)
+## Release
+
+PR → squash-merge to `master` with a conventional subject. **Publish** (semantic-release) bumps version, updates `CHANGELOG.md`, publishes to GitHub Packages, tags, and opens a GitHub Release.
+
+| Squash subject | Bump |
+|----------------|------|
+| `fix:` / `perf:` | patch |
+| `feat:` | minor |
+| `feat!:` / `fix!:` / `BREAKING CHANGE:` | major |
+| `chore:` / `docs:` / `ci:` / `refactor:` | none |
 
 ## Scripts
 
 | Script | Purpose |
 |--------|---------|
-| `npm run build` | Emit `dist/` (ESM + types + `theme.css`) |
+| `npm run build` | Emit `dist/` |
 | `npm run pack:artifact` | Build + `npm pack` |
-
-## Develop and publish
-
-1. Branch off `master`, open a PR.
-2. Wait for the **Package** check (`Build + artifact`) to pass.
-3. Squash-merge with a [Conventional Commits](https://www.conventionalcommits.org/) subject:
-
-| Squash subject | Version bump |
-|----------------|--------------|
-| `fix:` / `perf:` | patch |
-| `feat:` | minor |
-| `feat!:` / `fix!:` / body `BREAKING CHANGE:` | major |
-| `chore:` / `docs:` / `ci:` / `refactor:` | none (no publish) |
-
-4. Merge to `master` runs **Publish**: version bump, `CHANGELOG.md` update, GitHub Packages publish, git tag, GitHub Release.
-
-**First release baseline:** after the initial commit lands on `master`, create tag `v0.0.1` (matches `package.json`). Without that tag, the first releasable squash publishes as `1.0.0`.
 
 ## Folders
 
@@ -82,4 +72,4 @@ In the consumer CSS entry (Tailwind v4):
 
 ## Theming (`primary`)
 
-Default chrome uses `@theme` tokens in `src/theme.css` (`--color-styles-primary-*`). Override those after importing `theme.css` to restyle library defaults.
+Override `--color-styles-primary-*` in `src/theme.css` after importing `theme.css`.
