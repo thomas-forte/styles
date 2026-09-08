@@ -57,18 +57,6 @@ In the consumer CSS entry (Tailwind v4):
 
 **First release baseline:** after the initial commit lands on `master`, create tag `v0.0.1` (matches `package.json`). Without that tag, the first releasable squash publishes as `1.0.0`.
 
-### One-time GitHub repo settings
-
-Repo **Settings** (not org-wide unless you prefer that):
-
-1. **General → Pull Requests** — enable *Allow squash merging*; turn off merge commit and rebase if you want squash-only.
-2. **Rules → Rulesets** (or **Branches → Branch protection rules**) on `master`:
-   - Require a pull request before merging
-   - Require status checks to pass: `Build + artifact`
-   - Allow *GitHub Actions* / `github-actions[bot]` to bypass the rule (needed so Publish can push the release commit and tag)
-3. **Actions → General → Workflow permissions** — *Read and write permissions* (so `GITHUB_TOKEN` can publish the package and push tags)
-4. After the first successful Publish: **Packages** for `@thomas-forte/styles` → set package visibility to **Public** if it is not already
-
 ## Folders
 
 | Folder | Purpose |
