@@ -1,0 +1,33 @@
+/* Default chrome tokens for @thomas-forte/styles `primary` scheme.
+ * Consumers override these in their own CSS after importing this file. */
+@theme {
+  --color-styles-primary-fg: var(--color-slate-100);
+  --color-styles-primary-fg-muted: var(--color-slate-200);
+  --color-styles-primary-placeholder: var(--color-slate-500);
+  --color-styles-primary-border: color-mix(
+    in oklab,
+    var(--color-slate-700) 70%,
+    transparent
+  );
+  --color-styles-primary-border-strong: var(--color-slate-600);
+  --color-styles-primary-bg: color-mix(
+    in oklab,
+    var(--color-slate-900) 65%,
+    transparent
+  );
+  --color-styles-primary-bg-control: color-mix(
+    in oklab,
+    var(--color-slate-950) 80%,
+    transparent
+  );
+  --color-styles-primary-ring: color-mix(
+    in oklab,
+    var(--color-cyan-500) 20%,
+    transparent
+  );
+  --color-styles-primary-ring-border: color-mix(
+    in oklab,
+    var(--color-cyan-400) 60%,
+    transparent
+  );
+}

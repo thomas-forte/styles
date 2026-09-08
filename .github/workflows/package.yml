@@ -1,0 +1,42 @@
+name: Package
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: styles-package-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build + artifact
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build and pack
+        run: npm run pack:artifact
+
+      - name: Upload package artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: thomas-forte-styles
+          path: thomas-forte-styles-*.tgz
+          if-no-files-found: error
+          retention-days: 14
