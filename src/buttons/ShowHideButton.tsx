@@ -6,10 +6,7 @@ export type ShowHideButtonProps = Omit<IconButtonProps, "icon"> & {
   isExpanded: boolean;
 };
 
-export function ShowHideButton({
-  isExpanded,
-  ...props
-}: ShowHideButtonProps) {
+export function ShowHideButton({ isExpanded, ...props }: ShowHideButtonProps) {
   return (
     <IconButton
       icon={isExpanded ? ChevronUpIcon : ChevronDownIcon}

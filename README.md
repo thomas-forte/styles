@@ -16,12 +16,12 @@ npm install @thomas-forte/styles
 
 ### Peer dependencies
 
-| Package | Version |
-|---------|---------|
-| `react` | `^19.0.0` |
-| `react-dom` | `^19.0.0` |
-| `react-router` | `^8.0.0` |
-| `tailwindcss` | `^4.0.0` |
+| Package        | Version   |
+| -------------- | --------- |
+| `react`        | `^19.0.0` |
+| `react-dom`    | `^19.0.0` |
+| `react-router` | `^8.0.0`  |
+| `tailwindcss`  | `^4.0.0`  |
 
 ```css
 @import "tailwindcss";
@@ -33,34 +33,39 @@ npm install @thomas-forte/styles
 
 PR → squash-merge to `master` with a conventional subject. **Publish** (semantic-release) bumps version, updates `CHANGELOG.md`, publishes to GitHub Packages, tags, and opens a GitHub Release.
 
-| Squash subject | Bump |
-|----------------|------|
-| `fix:` / `perf:` | patch |
-| `feat:` | minor |
-| `feat!:` / `fix!:` / `BREAKING CHANGE:` | major |
-| `chore:` / `docs:` / `ci:` / `refactor:` | none |
+| Squash subject                           | Bump  |
+| ---------------------------------------- | ----- |
+| `fix:` / `perf:`                         | patch |
+| `feat:`                                  | minor |
+| `feat!:` / `fix!:` / `BREAKING CHANGE:`  | major |
+| `chore:` / `docs:` / `ci:` / `refactor:` | none  |
 
 ## Scripts
 
-| Script | Purpose |
-|--------|---------|
-| `npm run build` | Emit `dist/` |
-| `npm run pack:artifact` | Build + `npm pack` |
+| Script                  | Purpose                          |
+| ----------------------- | -------------------------------- |
+| `npm run lint`          | oxlint                           |
+| `npm run build`         | Emit library `dist/`             |
+| `npm run pack:artifact` | Build + `npm pack`               |
+| `npm run dev`           | Local demo (`dev/`)              |
+| `npm run dev:build`     | Typecheck + build demo for Pages |
+
+Demo app lives in `dev/` (not published). Pages deploys from `master` via `.github/workflows/pages.yml`.
 
 ## Folders
 
-| Folder | Purpose |
-|--------|---------|
-| `base/` | Typography and chips |
-| `buttons/` | Buttons and toggle affordances |
-| `cards/` | Card shells and title/action rows |
-| `forms/` | Inputs, selects, shared field styles |
-| `icons/` | Local SVG icon components |
-| `layout/` | Page chrome |
-| `overlay/` | Modals / dialogs |
+| Folder      | Purpose                              |
+| ----------- | ------------------------------------ |
+| `base/`     | Typography and chips                 |
+| `buttons/`  | Buttons and toggle affordances       |
+| `cards/`    | Card shells and title/action rows    |
+| `forms/`    | Inputs, selects, shared field styles |
+| `icons/`    | Local SVG icon components            |
+| `layout/`   | Page chrome                          |
+| `overlay/`  | Modals / dialogs                     |
 | `feedback/` | Loading and response-time indicators |
-| `data/` | Console / copy / clock helpers |
-| `demo/` | Living catalog (`Demo`) |
+| `data/`     | Console / copy / clock helpers       |
+| `demo/`     | Living catalog (`Demo`)              |
 
 ## Rules
 

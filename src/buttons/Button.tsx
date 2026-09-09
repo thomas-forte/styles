@@ -21,7 +21,8 @@ export type ButtonColorScheme = "slate" | "cyan" | "amber" | "rose" | "zinc";
 const COLOR_SCHEME_CLASS: Record<ButtonColorScheme, string> = {
   slate: "border-slate-600 bg-slate-800 text-slate-100 hover:bg-slate-700",
   cyan: "border-cyan-700/70 bg-cyan-900/30 text-cyan-100 hover:bg-cyan-800/40",
-  amber: "border-amber-700/70 bg-amber-900/25 text-amber-100 hover:bg-amber-800/35",
+  amber:
+    "border-amber-700/70 bg-amber-900/25 text-amber-100 hover:bg-amber-800/35",
   rose: "border-rose-900/70 bg-zinc-950 text-rose-200 hover:bg-zinc-900",
   zinc: "border-zinc-600 bg-zinc-800 text-zinc-100 hover:bg-zinc-700",
 };
@@ -42,6 +43,7 @@ export function Button({
     <button
       {...props}
       className={classes}
+      // oxlint-disable-next-line typescript/no-base-to-string
       title={title || (children?.toString() ?? undefined)}
     >
       {children}

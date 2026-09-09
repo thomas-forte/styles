@@ -16,7 +16,10 @@
   ],
   "scripts": {
     "build": "tsup && cp src/theme.css dist/theme.css",
-    "pack:artifact": "npm run build && npm pack"
+    "pack:artifact": "npm run build && npm pack",
+    "dev": "vite",
+    "dev:build": "tsc -b && vite build",
+    "lint": "oxlint"
   },
   "repository": {
     "type": "git",
@@ -37,17 +40,32 @@
     "tailwindcss": "^4.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.29.7",
+    "@fontsource/audiowide": "^5.3.0",
+    "@rolldown/plugin-babel": "^0.2.4",
     "@semantic-release/changelog": "^7.0.0",
     "@semantic-release/commit-analyzer": "^13.0.1",
     "@semantic-release/git": "^11.0.1",
     "@semantic-release/github": "^12.0.9",
     "@semantic-release/npm": "^13.1.5",
     "@semantic-release/release-notes-generator": "^14.1.1",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/babel__core": "^7.20.5",
+    "@types/node": "^26.5.0",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.1.1",
+    "babel-plugin-react-compiler": "^1.0.0",
+    "oxlint": "^1.82.0",
+    "oxlint-tsgolint": "^7.0.2001",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router": "^8.3.1",
     "semantic-release": "^25.0.9",
+    "tailwindcss": "^4.3.3",
     "tsup": "^8.5.0",
-    "typescript": "~6.0.2"
+    "typescript": "~6.0.2",
+    "vite": "^8.2.2"
   },
   "allowScripts": {
     "fsevents@2.3.3": true,

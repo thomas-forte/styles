@@ -58,7 +58,12 @@ export const Clock = () => {
         r="171.891"
         fill="url(#_clock_Linear4)"
       />
-      <circle cx="252.377" cy="246.476" r="168.168" fill="#d4d8c0" />
+      <circle
+        cx="252.377"
+        cy="246.476"
+        r="168.168"
+        fill="#d4d8c0"
+      />
       <path
         d="M234.412,124.918L234.412,124.256L237.498,123.375L237.498,99.171L232.869,102.434L231.987,101.331L240.011,94.057L244.772,94.057L244.772,123.375L247.858,124.256L247.858,124.918L234.412,124.918Z"
         fill="#2c2d27"
@@ -236,7 +241,12 @@ export const Clock = () => {
         className="clock_second_hand"
         transform={`rotate(${date.getSeconds() * 6} 252.377 246.476)`}
       />
-      <circle cx="252.377" cy="246.476" r="5.752" fill="url(#_Radial8)" />
+      <circle
+        cx="252.377"
+        cy="246.476"
+        r="5.752"
+        fill="url(#_Radial8)"
+      />
       <defs>
         <linearGradient
           id="_clock_Linear1"
@@ -247,11 +257,31 @@ export const Clock = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="matrix(504.754,0,0,513.871,-4.54747e-13,246.476)"
         >
-          <stop offset="0" stopColor="#812e00" stopOpacity="1" />
-          <stop offset="0.18" stopColor="#c95d21" stopOpacity="1" />
-          <stop offset="0.5" stopColor="#d66527" stopOpacity="1" />
-          <stop offset="0.82" stopColor="#dc692a" stopOpacity="1" />
-          <stop offset="1" stopColor="#ff823d" stopOpacity="1" />
+          <stop
+            offset="0"
+            stopColor="#812e00"
+            stopOpacity="1"
+          />
+          <stop
+            offset="0.18"
+            stopColor="#c95d21"
+            stopOpacity="1"
+          />
+          <stop
+            offset="0.5"
+            stopColor="#d66527"
+            stopOpacity="1"
+          />
+          <stop
+            offset="0.82"
+            stopColor="#dc692a"
+            stopOpacity="1"
+          />
+          <stop
+            offset="1"
+            stopColor="#ff823d"
+            stopOpacity="1"
+          />
         </linearGradient>
         <linearGradient
           id="_clock_Linear2"
@@ -262,13 +292,41 @@ export const Clock = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="matrix(454.066,0,0,454.066,25.3438,246.476)"
         >
-          <stop offset="0" stopColor="#7a2e04" stopOpacity="1" />
-          <stop offset="0.09" stopColor="#a04513" stopOpacity="1" />
-          <stop offset="0.2" stopColor="#c65b21" stopOpacity="1" />
-          <stop offset="0.5" stopColor="#d66527" stopOpacity="1" />
-          <stop offset="0.8" stopColor="#dd7339" stopOpacity="1" />
-          <stop offset="0.91" stopColor="#ee9362" stopOpacity="1" />
-          <stop offset="1" stopColor="#ffb58c" stopOpacity="1" />
+          <stop
+            offset="0"
+            stopColor="#7a2e04"
+            stopOpacity="1"
+          />
+          <stop
+            offset="0.09"
+            stopColor="#a04513"
+            stopOpacity="1"
+          />
+          <stop
+            offset="0.2"
+            stopColor="#c65b21"
+            stopOpacity="1"
+          />
+          <stop
+            offset="0.5"
+            stopColor="#d66527"
+            stopOpacity="1"
+          />
+          <stop
+            offset="0.8"
+            stopColor="#dd7339"
+            stopOpacity="1"
+          />
+          <stop
+            offset="0.91"
+            stopColor="#ee9362"
+            stopOpacity="1"
+          />
+          <stop
+            offset="1"
+            stopColor="#ffb58c"
+            stopOpacity="1"
+          />
         </linearGradient>
         <linearGradient
           id="_clock_Linear3"
@@ -279,11 +337,31 @@ export const Clock = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="matrix(-356.409,4.36476e-14,-4.36476e-14,-356.409,430.582,246.476)"
         >
-          <stop offset="0" stopColor="#feeddf" stopOpacity="1" />
-          <stop offset="0.23" stopColor="#c4aa96" stopOpacity="1" />
-          <stop offset="0.5" stopColor="#b49882" stopOpacity="1" />
-          <stop offset="0.78" stopColor="#a48b77" stopOpacity="1" />
-          <stop offset="1" stopColor="#695a4e" stopOpacity="1" />
+          <stop
+            offset="0"
+            stopColor="#feeddf"
+            stopOpacity="1"
+          />
+          <stop
+            offset="0.23"
+            stopColor="#c4aa96"
+            stopOpacity="1"
+          />
+          <stop
+            offset="0.5"
+            stopColor="#b49882"
+            stopOpacity="1"
+          />
+          <stop
+            offset="0.78"
+            stopColor="#a48b77"
+            stopOpacity="1"
+          />
+          <stop
+            offset="1"
+            stopColor="#695a4e"
+            stopOpacity="1"
+          />
         </linearGradient>
         <linearGradient
           id="_clock_Linear4"
@@ -294,11 +372,31 @@ export const Clock = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="matrix(-343.782,4.21012e-14,-4.21012e-14,-343.782,424.268,246.476)"
         >
-          <stop offset="0" stopColor="#695a4e" stopOpacity="1" />
-          <stop offset="0.26" stopColor="#a08874" stopOpacity="1" />
-          <stop offset="0.5" stopColor="#b49882" stopOpacity="1" />
-          <stop offset="0.74" stopColor="#c8af9b" stopOpacity="1" />
-          <stop offset="1" stopColor="#feeddf" stopOpacity="1" />
+          <stop
+            offset="0"
+            stopColor="#695a4e"
+            stopOpacity="1"
+          />
+          <stop
+            offset="0.26"
+            stopColor="#a08874"
+            stopOpacity="1"
+          />
+          <stop
+            offset="0.5"
+            stopColor="#b49882"
+            stopOpacity="1"
+          />
+          <stop
+            offset="0.74"
+            stopColor="#c8af9b"
+            stopOpacity="1"
+          />
+          <stop
+            offset="1"
+            stopColor="#feeddf"
+            stopOpacity="1"
+          />
         </linearGradient>
         <radialGradient
           id="_Radial8"
@@ -308,9 +406,21 @@ export const Clock = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="matrix(5.75239,0,0,5.75239,252.377,246.476)"
         >
-          <stop offset="0" stopColor="#cc5d30" stopOpacity="1" />
-          <stop offset="0.57" stopColor="#cc5d30" stopOpacity="1" />
-          <stop offset="1" stopColor="#a94c26" stopOpacity="1" />
+          <stop
+            offset="0"
+            stopColor="#cc5d30"
+            stopOpacity="1"
+          />
+          <stop
+            offset="0.57"
+            stopColor="#cc5d30"
+            stopOpacity="1"
+          />
+          <stop
+            offset="1"
+            stopColor="#a94c26"
+            stopOpacity="1"
+          />
         </radialGradient>
       </defs>
     </svg>
