@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.2](https://github.com/thomas-forte/styles/compare/v1.1.1...v1.1.2) (2026-09-09)
+
+
+### Bug Fixes
+
+* Update license file, clean up changelog formatting, cword corrections, and config ([#5](https://github.com/thomas-forte/styles/issues/5)) ([6ce80c5](https://github.com/thomas-forte/styles/commit/6ce80c560a4e1125d51d9e53febe164f6efb0368))
+
 ## [1.1.1](https://github.com/thomas-forte/styles/compare/v1.1.0...v1.1.1) (2026-09-09)
 
 
