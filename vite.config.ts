@@ -13,6 +13,7 @@ const nodeModules = path.resolve(__dirname, "node_modules");
 // https://vite.dev/config/
 export default defineConfig({
   root: "dev",
+  publicDir: path.resolve(demoRoot, "public"),
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] }),
