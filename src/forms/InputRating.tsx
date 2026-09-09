@@ -23,8 +23,7 @@ const COLOR_SCHEME_CLASS_LABEL: Record<ColorScheme, string> = {
 const COLOR_SCHEME_CLASS_INPUT: Record<ColorScheme, string> = {
   primary:
     "text-styles-primary-fg border border-styles-primary-border-strong bg-styles-primary-bg-control transition focus:border-styles-primary-ring-border focus:ring-2 focus:ring-styles-primary-ring outline-none",
-  code:
-    "text-cyan-100 border border-cyan-600 bg-cyan-950/80 outline-none transition",
+  code: "text-cyan-100 border border-cyan-600 bg-cyan-950/80 outline-none transition",
 };
 
 export const InputRating = ({

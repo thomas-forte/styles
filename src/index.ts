@@ -5,7 +5,11 @@ export {
   type BadgeProps,
   type BadgeSize,
 } from "./base/Badge";
-export { IconBadge, type IconBadgeProps, type IconComponent } from "./base/IconBadge";
+export {
+  IconBadge,
+  type IconBadgeProps,
+  type IconComponent,
+} from "./base/IconBadge";
 export { Subtitle } from "./base/Subtitle";
 export { Title, type TitleSize } from "./base/Title";
 
@@ -16,7 +20,10 @@ export {
   type ButtonSize,
 } from "./buttons/Button";
 export { IconButton, type IconButtonProps } from "./buttons/IconButton";
-export { ShowHideButton, type ShowHideButtonProps } from "./buttons/ShowHideButton";
+export {
+  ShowHideButton,
+  type ShowHideButtonProps,
+} from "./buttons/ShowHideButton";
 
 // cards
 export { Card, type CardColorScheme } from "./cards/Card";

@@ -13,7 +13,7 @@ export const ConsoleBox = ({
   loading,
   errors,
   preformatted = false,
-  wrapper = "none",
+  wrapper,
 }: ConsoleBoxProps) => {
   const wrapperMap = {
     array: {
@@ -35,7 +35,15 @@ export const ConsoleBox = ({
     >
       {wrapperMap[wrapper]["open"]}
       {loading && <Loading color="emerald" />}
-      {errors && errors.map((error) => <div className="ml-6">{error[1]}</div>)}
+      {errors &&
+        errors.map((error, index) => (
+          <div
+            key={index}
+            className="ml-6"
+          >
+            {error[1]}
+          </div>
+        ))}
       {children}
       {wrapperMap[wrapper]["close"]}
     </div>

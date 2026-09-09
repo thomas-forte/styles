@@ -1,0 +1,19 @@
+{
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.formatOnSave": true,
+    "editor.linkedEditing": true
+  },
+  "html.format.wrapAttributes": "force-expand-multiline",
+  "[glob:**/*.{ts,tsx}]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  }
+}
