@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/thomas-forte/styles/compare/v1.0.0...v1.1.0) (2026-09-09)
+
+
+### Features
+
+* create demo page and update build process ([#3](https://github.com/thomas-forte/styles/issues/3)) ([87cd428](https://github.com/thomas-forte/styles/commit/87cd428abc989103ecd8fff63b8b2aad4708c891))
+
 # 1.0.0 (2026-09-08)
 
 
