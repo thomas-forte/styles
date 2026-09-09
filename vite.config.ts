@@ -8,6 +8,7 @@ import tailwindcss from "@tailwindcss/vite";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const librarySrc = path.resolve(__dirname, "src");
 const demoRoot = path.resolve(__dirname, "dev");
+const nodeModules = path.resolve(__dirname, "node_modules");
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -20,14 +21,17 @@ export default defineConfig({
   resolve: {
     alias: {
       // Library source — HMR without rebuild
-      "@thomas-forte/styles/theme.css": path.resolve(librarySrc, "theme.css"),
+      "@thomas-forte/styles/theme.css": path.resolve(
+        librarySrc,
+        "theme.css",
+      ),
       "@thomas-forte/styles": path.resolve(librarySrc, "index.ts"),
     },
     dedupe: ["react", "react-dom"],
   },
   server: {
     fs: {
-      allow: [librarySrc, demoRoot],
+      allow: [librarySrc, demoRoot, nodeModules],
     },
   },
 });

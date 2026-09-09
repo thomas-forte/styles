@@ -1,7 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { HashRouter, Navigate, Route, Routes } from "react-router";
-import "@fontsource/audiowide/400.css";
 
 import { Demo } from "@thomas-forte/styles";
 import "./styles.css";
