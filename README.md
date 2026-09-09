@@ -57,7 +57,7 @@ Demo app lives in `dev/` (not published). Pages deploys from `master` via `.gith
 | Folder      | Purpose                              |
 | ----------- | ------------------------------------ |
 | `base/`     | Typography and chips                 |
-| `buttons/`  | Buttons and toggle affordances       |
+| `buttons/`  | Buttons and toggle                   |
 | `cards/`    | Card shells and title/action rows    |
 | `forms/`    | Inputs, selects, shared field styles |
 | `icons/`    | Local SVG icon components            |

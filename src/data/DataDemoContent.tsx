@@ -33,7 +33,7 @@ export const DataDemoContent = () => {
           text="show text"
           showText
         />
-        <CopyBox text="dont show text" />
+        <CopyBox text="don't show text" />
       </div>
 
       <div>
