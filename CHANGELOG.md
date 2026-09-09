@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/thomas-forte/styles/compare/v1.1.0...v1.1.1) (2026-09-09)
+
+
+### Bug Fixes
+
+* Content attributes and removing icons ([#4](https://github.com/thomas-forte/styles/issues/4)) ([00f9ea4](https://github.com/thomas-forte/styles/commit/00f9ea43c62ce65d5a45d051c0324c88dbc0c682))
+
 # [1.1.0](https://github.com/thomas-forte/styles/compare/v1.0.0...v1.1.0) (2026-09-09)
 
 
