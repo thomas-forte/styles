@@ -11,9 +11,22 @@
     "editor.formatOnSave": true,
     "editor.linkedEditing": true
   },
+  "[glob:**/*.{css,scss}]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
   "html.format.wrapAttributes": "force-expand-multiline",
   "[glob:**/*.{ts,tsx}]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
-  }
+  },
+  "cSpell.words": [
+    "audiowide",
+    "Dialogify",
+    "fontsource",
+    "oklab",
+    "Renderable",
+    "Trepal",
+    "tsgolint"
+  ]
 }

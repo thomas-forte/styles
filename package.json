@@ -25,6 +25,7 @@
     "type": "git",
     "url": "git+https://github.com/thomas-forte/styles.git"
   },
+  "license": "GPL-3.0-only",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com",
     "access": "public"
