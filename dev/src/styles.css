@@ -1,9 +1,10 @@
+@import "@fontsource/audiowide/400.css";
 @import "tailwindcss";
 @import "@thomas-forte/styles/theme.css";
 @source "../../src";
 
-.font-audiowide {
-  font-family: "Audiowide", Impact, sans-serif;
+@theme {
+  --font-primary: "Audiowide", Impact, sans-serif;
 }
 
 body {

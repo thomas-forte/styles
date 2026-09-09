@@ -21,7 +21,7 @@ const SIZE_CLASSES: Record<TitleSize, string> = {
   xl: "text-3xl tracking-[0.28em] md:text-4xl",
 };
 
-const BASE_CLASSES = "font-audiowide text-orange-200/85";
+const BASE_CLASSES = "font-primary text-orange-200/85";
 
 export const Title = ({
   text,

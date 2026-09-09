@@ -60,14 +60,7 @@ export { InputRating } from "./forms/InputRating";
 export { Select, type SelectOption } from "./forms/Select";
 
 // icons
-export { FaCloudSun } from "./icons/FaCloudSun";
-export { FaSeedling } from "./icons/FaSeedling";
-export { FaSwatchbook } from "./icons/FaSwatchbook";
-export { FaThumbtack } from "./icons/FaThumbtack";
-export { FaUserAstronaut } from "./icons/FaUserAstronaut";
-export { FaUserSecret } from "./icons/FaUserSecret";
-export { FaUserSlash } from "./icons/FaUserSlash";
-export { FaUserTie } from "./icons/FaUserTie";
+export { IconWrapper } from "./icons/IconWrapper";
 
 // layout
 export { Breadcrumbs, type BreadcrumbItem } from "./layout/Breadcrumbs";
