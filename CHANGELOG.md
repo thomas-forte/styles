@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.3](https://github.com/thomas-forte/styles/compare/v1.1.2...v1.1.3) (2026-09-18)
+
+
+### Bug Fixes
+
+* fixing default title on icon buttons ([#6](https://github.com/thomas-forte/styles/issues/6)) ([49947c3](https://github.com/thomas-forte/styles/commit/49947c32bd466e42fa9888ad4d63f535c47016f6))
+
 ## [1.1.2](https://github.com/thomas-forte/styles/compare/v1.1.1...v1.1.2) (2026-09-09)
 
 
