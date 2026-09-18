@@ -20,6 +20,7 @@ export function IconButton({
   children,
   size = "md",
   className = "",
+  title,
   ...props
 }: IconButtonProps) {
   const hasLabel = hasRenderableChildren(children);
@@ -30,11 +31,17 @@ export function IconButton({
         className: ICON_SIZE_CLASS[size],
         "aria-hidden": true,
       });
+  const resolvedTitle =
+    title ||
+    (typeof children === "string" || typeof children === "number"
+      ? String(children)
+      : undefined);
 
   return (
     <Button
       size={size}
       className={`gap-1 ${className}`}
+      title={resolvedTitle}
       {...props}
     >
       <span
