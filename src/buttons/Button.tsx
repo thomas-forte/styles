@@ -43,8 +43,12 @@ export function Button({
     <button
       {...props}
       className={classes}
-      // oxlint-disable-next-line typescript/no-base-to-string
-      title={title || (children?.toString() ?? undefined)}
+      title={
+        title ||
+        (typeof children === "string" || typeof children === "number"
+          ? String(children)
+          : undefined)
+      }
     >
       {children}
     </button>
