@@ -74,6 +74,7 @@ export {
   type ConfirmDialogProps,
 } from "./dialogs/ConfirmDialog";
 export { Dialogify, type DialogifyProps } from "./dialogs/Dialogify";
+export { DialogBody, type DialogBodyProps } from "./dialogs/DialogBody";
 
 // demo
 export { Demo } from "./demo/Demo";
