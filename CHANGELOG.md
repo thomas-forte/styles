@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+# [1.4.0](https://github.com/thomas-forte/styles/compare/v1.3.0...v1.4.0) (2026-09-21)
+
+
+### Features
+
+* adding notification dialog popup ([#9](https://github.com/thomas-forte/styles/issues/9)) ([6abd44e](https://github.com/thomas-forte/styles/commit/6abd44e809ec1972eb3de0e70138233eecd20325))
+
 # [1.3.0](https://github.com/thomas-forte/styles/compare/v1.2.0...v1.3.0) (2026-09-21)
 
 
