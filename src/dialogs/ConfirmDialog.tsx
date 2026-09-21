@@ -6,6 +6,7 @@ import {
   type ButtonSize,
 } from "../buttons/Button";
 import { Dialogify } from "./Dialogify";
+import { DialogBody } from "./DialogBody";
 
 export type ConfirmDialogProps = {
   title: string;
@@ -52,7 +53,7 @@ export const ConfirmDialog = ({
         isOpen={isOpen}
         onClose={() => setIsOpen(false)}
       >
-        <p className="text-sm font-medium text-slate-200">{message}</p>
+        <DialogBody message={message} />
         <div className="mt-4 flex justify-between items-center gap-2">
           <Button
             type="button"

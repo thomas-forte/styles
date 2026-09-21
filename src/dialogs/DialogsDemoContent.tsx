@@ -13,7 +13,6 @@ export const DialogsDemoContent = () => {
         <Button onClick={() => setDialogOpen(true)}>Open Dialogify</Button>
         <Dialogify
           title="Dialogify demo"
-          description="Dialog primitive"
           isOpen={dialogOpen}
           onClose={() => setDialogOpen(false)}
         >
