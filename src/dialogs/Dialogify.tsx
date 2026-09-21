@@ -1,12 +1,14 @@
+import { type ReactNode } from "react";
 import { Dialog, DialogPanel, DialogTitle } from "@headlessui/react";
 
-type DialogifyProps = {
+export type DialogifyProps = {
   title: string;
   description?: string;
   isOpen: boolean;
   onClose: () => void;
-  children: React.ReactNode;
+  children: ReactNode;
 };
+
 export const Dialogify = ({
   title,
   description,

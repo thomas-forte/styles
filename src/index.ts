@@ -68,8 +68,12 @@ export { Page } from "./layout/Page";
 export { Panel } from "./layout/Panel";
 export { PanelItem, type PanelItemProps } from "./layout/PanelItem";
 
-// overlay
-export { Dialogify } from "./overlay/Dialogify";
+// dialogs
+export {
+  ConfirmDialog,
+  type ConfirmDialogProps,
+} from "./dialogs/ConfirmDialog";
+export { Dialogify, type DialogifyProps } from "./dialogs/Dialogify";
 
 // demo
 export { Demo } from "./demo/Demo";
