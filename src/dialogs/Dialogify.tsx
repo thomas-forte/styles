@@ -3,12 +3,18 @@ import { Dialog, DialogPanel, DialogTitle } from "@headlessui/react";
 
 export type DialogifyProps = {
   title: string;
+  /**
+   * Optional subtitle under the title.
+   * Declared for API symmetry; not currently rendered.
+   */
   description?: string;
   isOpen: boolean;
   onClose: () => void;
+  /** Body content under the title (forms, {@link DialogBody}, actions, etc.). */
   children: ReactNode;
 };
 
+/** Headless UI modal shell. Control open state with `isOpen` / `onClose`. */
 export const Dialogify = ({
   title,
   isOpen,

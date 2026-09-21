@@ -4,6 +4,7 @@ type PanelProps = {
   items: PanelItemProps[];
 };
 
+/** Stack of {@link PanelItem} rows. */
 export const Panel = ({ items }: PanelProps) => (
   <div className="text-sm text-slate-300">
     <ul className="space-y-2">

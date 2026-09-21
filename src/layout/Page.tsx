@@ -6,12 +6,16 @@ import { Breadcrumbs, type BreadcrumbItem } from "./Breadcrumbs";
 
 type PageProps = {
   children: ReactNode;
+  /** Replaces the page with {@link Loading}. Defaults to `false`. */
   isLoading?: boolean;
+  /** When defined (including `""`), shows {@link ResponseTimeBadge}. */
   processTime?: string;
   breadcrumbs?: BreadcrumbItem[];
+  /** Centered footer actions under the page. */
   actions?: ReactNode;
 };
 
+/** Page chrome: breadcrumbs, body, optional RT badge and footer actions. */
 export const Page = ({
   children,
   processTime,

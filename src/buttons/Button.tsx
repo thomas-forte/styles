@@ -3,8 +3,11 @@ import type { ButtonHTMLAttributes, ReactNode } from "react";
 export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   children: ReactNode;
   className?: string;
+  /** Defaults to `"md"`. */
   size?: ButtonSize;
+  /** Defaults to `"slate"`. */
   color?: ButtonColorScheme;
+  /** Native tooltip; defaults to string/number children when omitted. */
   title?: string;
 };
 
@@ -30,6 +33,7 @@ const COLOR_SCHEME_CLASS: Record<ButtonColorScheme, string> = {
 const BASE_BUTTON_CLASS =
   "inline-flex h-fit w-fit self-start items-center leading-none cursor-pointer rounded-md border font-medium transition disabled:cursor-not-allowed disabled:opacity-50";
 
+/** Standard bordered button. Forwards native button attributes. */
 export function Button({
   children,
   className = "",

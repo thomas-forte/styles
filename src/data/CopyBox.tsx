@@ -6,9 +6,12 @@ import {
 } from "@heroicons/react/24/solid";
 
 type CopyBoxProps = {
+  /** Clipboard payload. */
   text: string;
   className?: string;
+  /** Show `text` beside the icon before copy. */
   showText?: boolean;
+  /** Defaults to `"gray"`. */
   color?: CopyBoxColor;
 };
 
@@ -22,6 +25,7 @@ const COLOR_CLASSES: Record<CopyBoxColor, string> = {
 
 const BASE_CLASS = "cursor-pointer inline-flex items-center gap-1";
 
+/** Copies `text` to the clipboard; icon swaps for ~3s after success. */
 export const CopyBox = ({
   text,
   className = "",

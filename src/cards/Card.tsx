@@ -4,6 +4,7 @@ export type CardColorScheme = "primary" | "cyan" | "amber" | "rose";
 
 export type CardProps = {
   children?: ReactNode;
+  /** Defaults to `"primary"` (theme tokens). */
   color?: CardColorScheme;
   className?: string;
 };
@@ -19,6 +20,7 @@ const COLOR_SCHEME_CLASS: Record<CardColorScheme, string> = {
   rose: "border-rose-900/70 bg-zinc-950 text-rose-200",
 };
 
+/** Bordered panel shell; use {@link SteelCard} / {@link MediaCard} for header layouts. */
 export const Card = ({
   children,
   color = "primary",

@@ -11,15 +11,24 @@ import { DialogBody } from "./DialogBody";
 export type ConfirmDialogProps = {
   title: string;
   message: string;
+  /** Runs when the confirm button is clicked, then the dialog closes. */
   onConfirm?: () => void;
+  /** Confirm button label; defaults to `triggerLabel`. */
   confirmLabel?: string;
+  /** Confirm button color; defaults to `triggerButtonColor`. */
   confirmButtonType?: ButtonColorScheme;
   triggerLabel: string;
+  /** Defaults to `"slate"`. */
   triggerButtonColor?: ButtonColorScheme;
+  /** Defaults to `"md"`. */
   triggerButtonSize?: ButtonSize;
   triggerDisabled?: boolean;
 };
 
+/**
+ * Trigger button + confirm/cancel modal.
+ * Owns its own open state; confirm closes after `onConfirm`.
+ */
 export const ConfirmDialog = ({
   title,
   message,

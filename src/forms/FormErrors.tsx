@@ -1,7 +1,9 @@
 export type FormErrorsProps = {
+  /** `[field, message]` pairs. Empty or omitted renders nothing. */
   errors?: string[][];
 };
 
+/** Field error list for forms. */
 export const FormErrors = ({ errors = [] }: FormErrorsProps) => {
   if (!errors.length) {
     return null;

@@ -1,8 +1,10 @@
 import type { ChangeEvent } from "react";
 
 type InputProps = {
+  /** Defaults to `name`. */
   id?: string;
   label: string;
+  /** Helper text under the label. */
   description?: string;
   name: string;
   checked?: boolean;
@@ -10,6 +12,7 @@ type InputProps = {
   disabled?: boolean;
 };
 
+/** Toggle-styled checkbox with label and optional description. */
 export const InputCheck = ({
   id,
   label,

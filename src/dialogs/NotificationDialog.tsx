@@ -6,9 +6,17 @@ import { Dialogify } from "./Dialogify";
 
 export type NotificationDialogProps = {
   title: string;
+  /**
+   * Opens when non-empty. Close only dismisses the UI; clear `message` yourself
+   * if you need to reopen with the same string.
+   */
   message: string;
 };
 
+/**
+ * Read-only result modal. Opens when `message` becomes truthy.
+ * No trigger button — mount it and drive `message` from parent state.
+ */
 export const NotificationDialog = ({
   title,
   message,

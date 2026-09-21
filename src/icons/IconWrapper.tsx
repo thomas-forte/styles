@@ -1,3 +1,4 @@
+/** Decorative icon host; marked `aria-hidden`. */
 export const IconWrapper = ({
   children,
   className,

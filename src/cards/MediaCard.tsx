@@ -9,12 +9,17 @@ import {
 } from "./cardText";
 
 type MediaCardProps = Omit<CardProps, "children"> & {
+  /** Leading visual (image, icon, etc.). */
   media: ReactNode;
+  /** String becomes {@link Title}; nodes render as-is. */
   title?: ReactNode;
+  /** String becomes {@link Subtitle}; nodes render as-is. */
   subtitle?: ReactNode;
+  /** {@link CardTitleAction} list or a custom node. */
   actions?: CardTitleAction[] | ReactNode;
 };
 
+/** {@link Card} with media + title/subtitle + actions; no body children. */
 export const MediaCard = ({
   color = "primary",
   className,

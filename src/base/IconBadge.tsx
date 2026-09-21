@@ -9,10 +9,13 @@ import {
 import { Badge, type BadgeProps, type BadgeSize } from "./Badge";
 import { hasRenderableChildren } from "./BaseHelper";
 
+/** Heroicon-style SVG component, or a prebuilt React node. */
 export type IconComponent = ComponentType<SVGProps<SVGSVGElement>>;
 
 export type IconBadgeProps = Omit<BadgeProps, "children"> & {
+  /** Component type or element rendered before the optional label. */
   icon: IconComponent | ReactNode;
+  /** Optional text beside the icon. */
   children?: ReactNode;
 };
 
@@ -22,6 +25,7 @@ const ICON_SIZE_CLASS: Record<BadgeSize, string> = {
   lg: "size-5",
 };
 
+/** Badge with a leading icon; label is optional. */
 export const IconBadge = ({
   icon,
   children,

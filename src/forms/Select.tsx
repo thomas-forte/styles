@@ -16,17 +16,20 @@ export type SelectOption = {
 
 type SelectProps = {
   id?: string;
+  /** Defaults to `"primary"`. */
   color?: ColorScheme;
   label: string;
   name: string;
   value?: string;
   options: SelectOption[];
+  /** Adds an empty-value first option with this label. */
   placeholder?: string;
   onChange?: (e: ChangeEvent<HTMLSelectElement>) => void;
   required?: boolean;
   disabled?: boolean;
 };
 
+/** Labeled `<select>`. */
 export const Select = ({
   id,
   color = "primary",

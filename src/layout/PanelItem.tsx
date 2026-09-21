@@ -1,8 +1,10 @@
 export type PanelItemProps = {
   title?: string;
+  /** Key/value lines under the title. */
   lines?: Record<string, string>;
 };
 
+/** Single bordered row for {@link Panel}. */
 export const PanelItem = ({ title, lines }: PanelItemProps) => (
   <li className="rounded-md border border-styles-primary-border bg-slate-950/50 px-3 py-2">
     {title && (

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+/** Animated analog clock SVG; ticks every second. */
 export const Clock = () => {
   const [date, setDate] = useState(new Date());
 

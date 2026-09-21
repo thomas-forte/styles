@@ -3,7 +3,9 @@ import { Link } from "react-router";
 
 export type BreadcrumbItem = {
   name: string;
+  /** Link target; omit (or set `current`) for the active crumb. */
   to?: string;
+  /** Marks this item as the current page (no link). */
   current?: boolean;
 };
 
@@ -11,6 +13,7 @@ type BreadcrumbsProps = {
   items: BreadcrumbItem[];
 };
 
+/** Trail with a fixed Home link to `/`, then `items`. */
 export const Breadcrumbs = ({ items }: BreadcrumbsProps) => {
   return (
     <nav
