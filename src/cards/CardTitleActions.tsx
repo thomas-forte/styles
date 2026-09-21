@@ -1,5 +1,6 @@
 import { Fragment, type ReactNode } from "react";
 
+/** One action slot in a card header row. */
 export interface CardTitleAction {
   el: ReactNode;
 }
@@ -8,6 +9,7 @@ export type CardActionsProps = {
   actions?: CardTitleAction[];
 };
 
+/** Right-aligned action row for card headers. Returns `null` when empty. */
 export const CardTitleActions = ({ actions = [] }: CardActionsProps) => {
   if (!actions.length) {
     return null;

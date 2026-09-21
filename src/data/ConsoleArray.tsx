@@ -2,12 +2,16 @@ import { CopyBox } from "./CopyBox";
 
 type ConsoleArrayProps<T> = {
   array: T[];
+  /** Highlights the matching item (reference equality). */
   selectedItem?: T | null;
+  /** Show a {@link CopyBox} beside each row. */
   showCopy?: boolean;
   onSelect?: (item: T) => void;
+  /** How each item appears as text. */
   display: (item: T) => string;
 };
 
+/** Clickable quoted list rows for console-style output. */
 export const ConsoleArray = <T,>({
   array,
   selectedItem,

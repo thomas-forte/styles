@@ -1,5 +1,7 @@
 type LoadingProps = {
+  /** Defaults to `"lg"`. */
   size?: LoadingSize;
+  /** Defaults to `"slate"`. */
   color?: LoadingColor;
 };
 
@@ -18,6 +20,7 @@ const COLOR_CLASSES: Record<LoadingColor, string> = {
   emerald: "border-emerald-300",
 };
 
+/** Centered spinner. */
 export const Loading = ({ size = "lg", color = "slate" }: LoadingProps) => {
   const className = `${SIZE_CLASSES[size]} border-y-2 ${COLOR_CLASSES[color]}`;
   return (

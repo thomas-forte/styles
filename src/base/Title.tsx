@@ -5,10 +5,14 @@ import { hasRenderableChildren } from "./BaseHelper";
 
 type TitleProps = {
   text: string;
+  /** Defaults to `"md"`. */
   size?: TitleSize;
+  /** When set, renders as a react-router `Link`. */
   to?: string;
+  /** Native tooltip; defaults to `text`. */
   title?: string;
   className?: string;
+  /** Optional trailing content (e.g. badges) beside the text. */
   children?: ReactNode;
 };
 
@@ -23,6 +27,7 @@ const SIZE_CLASSES: Record<TitleSize, string> = {
 
 const BASE_CLASSES = "font-primary text-orange-200/85";
 
+/** Brand display heading; optional link via `to`. */
 export const Title = ({
   text,
   size = "md",

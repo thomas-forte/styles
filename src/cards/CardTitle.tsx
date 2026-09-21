@@ -4,12 +4,17 @@ import { hasRenderableChildren } from "../base/BaseHelper";
 import { resolveCardSubtitle, resolveCardTitle } from "./cardText";
 
 type CardTitleProps = {
+  /** String becomes {@link Title}; nodes render as-is. */
   title?: ReactNode;
+  /** String becomes {@link Subtitle}; nodes render as-is. */
   subtitle?: ReactNode;
+  /** Skip the divider under the header. Defaults to `false`. */
   hideHr?: boolean;
+  /** Trailing header content (usually actions). */
   children?: ReactNode;
 };
 
+/** Card header: title, subtitle, trailing children, optional `hr`. */
 export const CardTitle = ({
   title,
   subtitle,

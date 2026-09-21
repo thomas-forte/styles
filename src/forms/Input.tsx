@@ -8,7 +8,9 @@ import {
 type ColorScheme = "primary" | "code";
 
 type InputProps = {
+  /** Defaults to a slug derived from `name`. */
   id?: string;
+  /** Defaults to `"primary"`. Use `"code"` for console-styled fields. */
   color?: ColorScheme;
   label: string;
   name: string;
@@ -21,6 +23,7 @@ type InputProps = {
   disabled?: boolean;
 };
 
+/** Labeled text/number/etc. input. */
 export const Input = ({
   id,
   color = "primary",

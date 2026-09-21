@@ -5,7 +5,9 @@ import { type IconComponent } from "../base/IconBadge";
 import { Button, type ButtonProps, type ButtonSize } from "./Button";
 
 export type IconButtonProps = Omit<ButtonProps, "children"> & {
+  /** Component type or element rendered before the optional label. */
   icon: IconComponent | ReactNode;
+  /** Optional text beside the icon. */
   children?: ReactNode;
 };
 
@@ -15,6 +17,7 @@ const ICON_SIZE_CLASS: Record<ButtonSize, string> = {
   lg: "size-5",
 };
 
+/** {@link Button} with a leading icon; label is optional. */
 export function IconButton({
   icon,
   children,

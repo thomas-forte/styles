@@ -3,11 +3,15 @@ import { Loading } from "../feedback/Loading";
 type ConsoleBoxProps = {
   children: React.ReactNode;
   loading?: boolean;
+  /** `[field, message]` pairs rendered as error lines. */
   errors?: string[][];
+  /** Preserve whitespace. Defaults to `false`. */
   preformatted?: boolean;
+  /** Surrounds content with `[]`, `{}`, or nothing. */
   wrapper: "array" | "object" | "none";
 };
 
+/** Monospace console panel for API/debug output. */
 export const ConsoleBox = ({
   children,
   loading,

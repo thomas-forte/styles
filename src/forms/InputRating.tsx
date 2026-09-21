@@ -5,10 +5,12 @@ type ColorScheme = "primary" | "code";
 
 type InputRatingProps = {
   id?: string;
+  /** Defaults to `"primary"`. */
   color?: ColorScheme;
   label: string;
   name: string;
   autoComplete?: string;
+  /** Selected star as `"1"`–`"5"`, or empty / unset for none. Clicking the active star clears. */
   value?: string;
   onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
   required?: boolean;
@@ -26,6 +28,7 @@ const COLOR_SCHEME_CLASS_INPUT: Record<ColorScheme, string> = {
   code: "text-cyan-100 border border-cyan-600 bg-cyan-950/80 outline-none transition",
 };
 
+/** 1–5 star rating as radio inputs; click the selected star again to clear. */
 export const InputRating = ({
   id,
   color = "primary",

@@ -3,8 +3,11 @@ import { type ReactNode } from "react";
 export type BadgeProps = {
   children: ReactNode;
   className?: string;
+  /** Defaults to `"gray"`. */
   color?: BadgeColorScheme;
+  /** Defaults to `"sm"`. */
   size?: BadgeSize;
+  /** Native tooltip on hover. */
   title?: string;
 };
 
@@ -44,6 +47,7 @@ const COLOR_SCHEME_CLASS: Record<BadgeColorScheme, string> = {
 const BASE_CLASSES =
   "inline-flex h-fit w-fit self-start items-center leading-none gap-1 rounded-md font-medium tracking-normal font-sans inset-ring";
 
+/** Compact status / label chip. */
 export const Badge = ({
   children,
   color = "gray",

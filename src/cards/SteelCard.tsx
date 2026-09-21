@@ -10,12 +10,20 @@ import {
 } from "./cardText";
 
 type SteelCardProps = CardProps & {
+  /** String becomes {@link Title}; nodes render as-is. */
   title?: ReactNode;
+  /** String becomes {@link Subtitle}; nodes render as-is. */
   subtitle?: ReactNode;
+  /** Skip the header divider. Defaults to `false` when a header is present. */
   hideHr?: boolean;
+  /** {@link CardTitleAction} list or a custom node. */
   actions?: CardTitleAction[] | ReactNode;
 };
 
+/**
+ * {@link Card} with optional title/subtitle/actions header and body `children`.
+ * Header is omitted when title, subtitle, and actions are all empty.
+ */
 export const SteelCard = ({
   color = "primary",
   className,
