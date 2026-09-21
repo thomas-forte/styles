@@ -3,9 +3,11 @@ import { useState } from "react";
 import { Button } from "../buttons/Button";
 import { ConfirmDialog } from "./ConfirmDialog";
 import { Dialogify } from "./Dialogify";
+import { NotificationDialog } from "./NotificationDialog";
 
 export const DialogsDemoContent = () => {
   const [dialogOpen, setDialogOpen] = useState(false);
+  const [notificationMessage, setNotificationMessage] = useState("");
 
   return (
     <div className="space-y-4">
@@ -28,6 +30,13 @@ export const DialogsDemoContent = () => {
           title="Confirm Dialog"
           message="This is a confirm dialog."
           triggerLabel="Confirm"
+        />
+        <Button onClick={() => setNotificationMessage("Operation completed.")}>
+          Notify
+        </Button>
+        <NotificationDialog
+          title="Notification"
+          message={notificationMessage}
         />
       </div>
     </div>
