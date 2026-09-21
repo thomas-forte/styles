@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+# [1.5.0](https://github.com/thomas-forte/styles/compare/v1.4.0...v1.5.0) (2026-09-21)
+
+
+### Features
+
+* generated docs ([#10](https://github.com/thomas-forte/styles/issues/10)) ([76c2639](https://github.com/thomas-forte/styles/commit/76c263923d1070f0a59736f1d3cbc4bb69ae7ac6))
+
 # [1.4.0](https://github.com/thomas-forte/styles/compare/v1.3.0...v1.4.0) (2026-09-21)
 
 
