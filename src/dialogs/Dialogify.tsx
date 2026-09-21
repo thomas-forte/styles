@@ -11,7 +11,6 @@ export type DialogifyProps = {
 
 export const Dialogify = ({
   title,
-  description,
   isOpen,
   onClose,
   children,
@@ -36,9 +35,6 @@ export const Dialogify = ({
               >
                 {title}
               </DialogTitle>
-              {description && (
-                <p className="mt-2 text-sm/6 text-white/50">{description}</p>
-              )}
               {children}
             </DialogPanel>
           </div>
