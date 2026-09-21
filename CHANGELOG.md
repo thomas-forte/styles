@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+# [1.3.0](https://github.com/thomas-forte/styles/compare/v1.2.0...v1.3.0) (2026-09-21)
+
+
+### Features
+
+* Create dialog body ([#8](https://github.com/thomas-forte/styles/issues/8)) ([c1b78ee](https://github.com/thomas-forte/styles/commit/c1b78eea4856c65d514b0c4375632782a1fc4878))
+
 # [1.2.0](https://github.com/thomas-forte/styles/compare/v1.1.3...v1.2.0) (2026-09-21)
 
 
