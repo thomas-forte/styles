@@ -62,7 +62,7 @@ Demo app lives in `dev/` (not published). Pages deploys from `master` via `.gith
 | `forms/`    | Inputs, selects, shared field styles |
 | `icons/`    | Local SVG icon components            |
 | `layout/`   | Page chrome                          |
-| `overlay/`  | Modals / dialogs                     |
+| `dialogs/`  | Modals and dialogs                   |
 | `feedback/` | Loading and response-time indicators |
 | `data/`     | Console / copy / clock helpers       |
 | `demo/`     | Living catalog (`Demo`)              |

@@ -12,7 +12,7 @@ import { FeedbackDemoContent } from "../feedback/FeedbackDemoContent";
 import { FormsDemoContent } from "../forms/FormsDemoContent";
 import { IconsDemoContent } from "../icons/IconsDemoContent";
 import { LayoutDemoContent } from "../layout/LayoutDemoContent";
-import { OverlayDemoContent } from "../overlay/OverlayDemoContent";
+import { DialogsDemoContent } from "../dialogs/DialogsDemoContent";
 
 interface DemoProps {
   breadcrumbs: BreadcrumbItem[];
@@ -60,8 +60,8 @@ export const Demo = ({ breadcrumbs }: DemoProps) => (
     </Card>
 
     <Card>
-      <Title text="overlay/" />
-      <OverlayDemoContent />
+      <Title text="dialogs/" />
+      <DialogsDemoContent />
     </Card>
 
     <Card>
