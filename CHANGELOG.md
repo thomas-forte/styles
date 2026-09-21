@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+# [1.2.0](https://github.com/thomas-forte/styles/compare/v1.1.3...v1.2.0) (2026-09-21)
+
+
+### Features
+
+* migrate confirm dialog to this project ([#7](https://github.com/thomas-forte/styles/issues/7)) ([189e3e0](https://github.com/thomas-forte/styles/commit/189e3e0f62cdd502052458ee605af118f08bbf7a))
+
 ## [1.1.3](https://github.com/thomas-forte/styles/compare/v1.1.2...v1.1.3) (2026-09-18)
 
 
