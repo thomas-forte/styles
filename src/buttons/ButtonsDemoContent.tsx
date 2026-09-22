@@ -2,11 +2,13 @@ import { useState } from "react";
 import { CheckCircleIcon } from "@heroicons/react/24/outline";
 
 import { Button } from "./Button";
+import { ButtonMenu } from "./ButtonMenu";
 import { IconButton } from "./IconButton";
 import { ShowHideButton } from "./ShowHideButton";
 
 export const ButtonsDemoContent = () => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [menuNote, setMenuNote] = useState("");
 
   return (
     <div className="space-y-4">
@@ -79,6 +81,51 @@ export const ButtonsDemoContent = () => {
           Show hide
         </ShowHideButton>
       </div>
+
+      <div className="flex flex-wrap items-center gap-2">
+        <ButtonMenu
+          size="sm"
+          items={[
+            { label: "Profile", path: "/profile" },
+            { label: "Settings", path: "/settings", divider: "after" },
+            {
+              label: "Action",
+              onClick: () => setMenuNote("sm action"),
+            },
+          ]}
+        >
+          sm menu
+        </ButtonMenu>
+        <ButtonMenu
+          items={[
+            { label: "Profile", path: "/profile" },
+            { label: "Settings", path: "/settings", divider: "after" },
+            {
+              label: "Action",
+              onClick: () => setMenuNote("md action"),
+            },
+          ]}
+        >
+          md menu (default)
+        </ButtonMenu>
+        <ButtonMenu
+          size="lg"
+          anchor="bottom end"
+          items={[
+            { label: "Profile", path: "/profile" },
+            { label: "Settings", path: "/settings", divider: "after" },
+            {
+              label: "Action",
+              onClick: () => setMenuNote("lg action"),
+            },
+          ]}
+        >
+          lg menu (bottom end)
+        </ButtonMenu>
+      </div>
+      {menuNote && (
+        <p className="text-sm text-slate-400">Last menu action: {menuNote}</p>
+      )}
     </div>
   );
 };

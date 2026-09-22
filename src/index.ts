@@ -25,6 +25,11 @@ export {
   ShowHideButton,
   type ShowHideButtonProps,
 } from "./buttons/ShowHideButton";
+export {
+  ButtonMenu,
+  type ButtonMenuItem,
+  type ButtonMenuProps,
+} from "./buttons/ButtonMenu";
 
 // cards
 export { Card, type CardColorScheme } from "./cards/Card";
@@ -92,10 +97,6 @@ export {
 } from "./navigation/NavbarListItem";
 export { NavbarListItemDivider } from "./navigation/NavbarListItemDivider";
 export { type NavbarActionItem } from "./navigation/NavbarActionItem";
-export {
-  type NavbarActionProps,
-  NavbarAction,
-} from "./navigation/NavbarAction";
 export {
   NavbarActions,
   type NavbarActionsProps,
