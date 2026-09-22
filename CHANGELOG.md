@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+# [1.6.0](https://github.com/thomas-forte/styles/compare/v1.5.0...v1.6.0) (2026-09-22)
+
+
+### Features
+
+* adding navbar with some packed features for active icons and user menu ([#11](https://github.com/thomas-forte/styles/issues/11)) ([1cee231](https://github.com/thomas-forte/styles/commit/1cee2310c46683101a1528ab3dc8aa8e8164608c))
+
 # [1.5.0](https://github.com/thomas-forte/styles/compare/v1.4.0...v1.5.0) (2026-09-21)
 
 
