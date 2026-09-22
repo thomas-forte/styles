@@ -12,6 +12,7 @@ export {
 } from "./base/IconBadge";
 export { Subtitle } from "./base/Subtitle";
 export { Title, type TitleSize } from "./base/Title";
+export { Hr, type HrProps } from "./base/Hr";
 
 // buttons
 export {
@@ -79,6 +80,26 @@ export {
   NotificationDialog,
   type NotificationDialogProps,
 } from "./dialogs/NotificationDialog";
+
+// navigation
+export { Navbar } from "./navigation/Navbar";
+export { NavbarIconDivider } from "./navigation/NavbarIconDivider";
+export { NavbarIcon, type NavbarIconProps } from "./navigation/NavbarIcon";
+export { type NavbarItem } from "./navigation/NavbarItem";
+export {
+  NavbarListItem,
+  type NavbarListItemProps,
+} from "./navigation/NavbarListItem";
+export { NavbarListItemDivider } from "./navigation/NavbarListItemDivider";
+export { type NavbarActionItem } from "./navigation/NavbarActionItem";
+export {
+  type NavbarActionProps,
+  NavbarAction,
+} from "./navigation/NavbarAction";
+export {
+  NavbarActions,
+  type NavbarActionsProps,
+} from "./navigation/NavbarActions";
 
 // demo
 export { Demo } from "./demo/Demo";
