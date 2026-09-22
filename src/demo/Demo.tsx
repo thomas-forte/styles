@@ -14,6 +14,7 @@ import { IconsDemoContent } from "../icons/IconsDemoContent";
 import { LayoutDemoContent } from "../layout/LayoutDemoContent";
 import { DialogsDemoContent } from "../dialogs/DialogsDemoContent";
 import { NavigationDemoContent } from "../navigation/NavigationDemoContent";
+import { LinkIcon } from "@heroicons/react/24/solid";
 
 interface DemoProps {
   breadcrumbs: BreadcrumbItem[];
@@ -29,6 +30,14 @@ export const Demo = ({ breadcrumbs }: DemoProps) => (
       size="xl"
     />
     <Subtitle text="Demo page of the style library." />
+
+    <Title
+      text="Github repository"
+      size="sm"
+      to="https://github.com/thomas-forte/styles"
+    >
+      <LinkIcon className="size-4" />
+    </Title>
 
     <Card>
       <Title text="base/" />

@@ -1,4 +1,8 @@
-import type { ButtonHTMLAttributes, ReactNode } from "react";
+import {
+  forwardRef,
+  type ButtonHTMLAttributes,
+  type ReactNode,
+} from "react";
 
 export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   children: ReactNode;
@@ -34,27 +38,33 @@ const BASE_BUTTON_CLASS =
   "inline-flex h-fit w-fit self-start items-center leading-none cursor-pointer rounded-md border font-medium transition disabled:cursor-not-allowed disabled:opacity-50";
 
 /** Standard bordered button. Forwards native button attributes. */
-export function Button({
-  children,
-  className = "",
-  size = "md",
-  color = "slate",
-  title = "",
-  ...props
-}: ButtonProps) {
-  const classes = `${BASE_BUTTON_CLASS} ${SIZE_CLASS[size]} ${className} ${COLOR_SCHEME_CLASS[color]}`;
-  return (
-    <button
-      {...props}
-      className={classes}
-      title={
-        title ||
-        (typeof children === "string" || typeof children === "number"
-          ? String(children)
-          : undefined)
-      }
-    >
-      {children}
-    </button>
-  );
-}
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+  function Button(
+    {
+      children,
+      className = "",
+      size = "md",
+      color = "slate",
+      title = "",
+      ...props
+    },
+    ref,
+  ) {
+    const classes = `${BASE_BUTTON_CLASS} ${SIZE_CLASS[size]} ${className} ${COLOR_SCHEME_CLASS[color]}`;
+    return (
+      <button
+        ref={ref}
+        {...props}
+        className={classes}
+        title={
+          title ||
+          (typeof children === "string" || typeof children === "number"
+            ? String(children)
+            : undefined)
+        }
+      >
+        {children}
+      </button>
+    );
+  },
+);
