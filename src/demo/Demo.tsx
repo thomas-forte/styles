@@ -13,6 +13,7 @@ import { FormsDemoContent } from "../forms/FormsDemoContent";
 import { IconsDemoContent } from "../icons/IconsDemoContent";
 import { LayoutDemoContent } from "../layout/LayoutDemoContent";
 import { DialogsDemoContent } from "../dialogs/DialogsDemoContent";
+import { NavigationDemoContent } from "../navigation/NavigationDemoContent";
 
 interface DemoProps {
   breadcrumbs: BreadcrumbItem[];
@@ -72,6 +73,11 @@ export const Demo = ({ breadcrumbs }: DemoProps) => (
     <Card>
       <Title text="data/" />
       <DataDemoContent />
+    </Card>
+
+    <Card>
+      <Title text="navigation/" />
+      <NavigationDemoContent />
     </Card>
   </Page>
 );

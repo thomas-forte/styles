@@ -1,4 +1,5 @@
 import { Badge } from "./Badge";
+import { Hr } from "./Hr";
 import { Title } from "./Title";
 import { Subtitle } from "./Subtitle";
 import { IconBadge } from "./IconBadge";
@@ -104,6 +105,12 @@ export const BaseDemoContent = () => (
       >
         Node icon
       </IconBadge>
+    </div>
+
+    <div>
+      <Hr spacing="sm" />
+      <Hr spacing="md" />
+      <Hr spacing="lg" />
     </div>
   </div>
 );

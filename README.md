@@ -56,13 +56,14 @@ Demo app lives in `dev/` (not published). Pages deploys from `master` via `.gith
 
 | Folder      | Purpose                              |
 | ----------- | ------------------------------------ |
-| `base/`     | Typography and chips                 |
+| `base/`     | Typography, chips, and `Hr`          |
 | `buttons/`  | Buttons and toggle                   |
 | `cards/`    | Card shells and title/action rows    |
 | `forms/`    | Inputs, selects, shared field styles |
 | `icons/`    | Local SVG icon components            |
 | `layout/`   | Page chrome                          |
 | `dialogs/`  | Modals and dialogs                   |
+| `navigation/` | Top bar, icon nav, and actions menu |
 | `feedback/` | Loading and response-time indicators |
 | `data/`     | Console / copy / clock helpers       |
 | `demo/`     | Living catalog (`Demo`)              |
