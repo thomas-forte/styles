@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+# [1.7.0](https://github.com/thomas-forte/styles/compare/v1.6.0...v1.7.0) (2026-09-22)
+
+
+### Features
+
+* created menu button, reimplemented nav actions, update demo with link ([#12](https://github.com/thomas-forte/styles/issues/12)) ([99ab725](https://github.com/thomas-forte/styles/commit/99ab7251fdbb44bea52b12157c1d184f8878664e))
+
 # [1.6.0](https://github.com/thomas-forte/styles/compare/v1.5.0...v1.6.0) (2026-09-22)
 
 
