@@ -10,6 +10,7 @@ export {
   type IconBadgeProps,
   type IconComponent,
 } from "./base/IconBadge";
+export { Body } from "./base/Body";
 export { Subtitle } from "./base/Subtitle";
 export { Title, type TitleSize } from "./base/Title";
 export { Hr, type HrProps } from "./base/Hr";

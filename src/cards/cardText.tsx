@@ -19,7 +19,7 @@ export const resolveCardSubtitle = (value: ReactNode) => {
     return undefined;
   }
   if (typeof value === "string") {
-    return <Subtitle text={value} />;
+    return <Subtitle>{value}</Subtitle>;
   }
   return value;
 };

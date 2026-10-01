@@ -29,7 +29,7 @@ export const Demo = ({ breadcrumbs }: DemoProps) => (
       text="Style library"
       size="xl"
     />
-    <Subtitle text="Demo page of the style library." />
+    <Subtitle>Demo page of the style library.</Subtitle>
 
     <Title
       text="Github repository"
