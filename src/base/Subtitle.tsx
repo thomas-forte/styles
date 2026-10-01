@@ -1,18 +1,10 @@
-type SubtitleProps = {
-  text: string;
-  /** Native tooltip; falls back to no title attribute when omitted. */
-  title?: string;
-  /** Use monospace font. Defaults to `false`. */
-  mono?: boolean;
-  /** Use italic font. Defaults to `false`. */
-  italic?: boolean;
-};
+import { type BodyProps, BASE_CLASSES } from "./Body";
 
-const BASE_CLASSES = "text-sm text-slate-300 cursor-default";
+type SubtitleProps = BodyProps;
 
 /** Secondary heading under a {@link Title} or card header. */
 export const Subtitle = ({
-  text,
+  children,
   title,
   mono = false,
   italic = false,
@@ -21,9 +13,9 @@ export const Subtitle = ({
   return (
     <h4
       className={classes}
-      title={title}
+      title={title ?? children}
     >
-      {text}
+      {children}
     </h4>
   );
 };

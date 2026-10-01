@@ -10,6 +10,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { Link } from "./Link";
 import { Rating } from "./Rating";
+import { Body } from "./Body";
 
 export const BaseDemoContent = () => (
   <div className="space-y-4">
@@ -43,15 +44,15 @@ export const BaseDemoContent = () => (
     </div>
 
     <div>
-      <Subtitle text="Subtitle" />
-      <Subtitle
-        text="Subtitle mono"
-        mono
-      />
-      <Subtitle
-        text="Subtitle italic"
-        italic
-      />
+      <Subtitle>Subtitle</Subtitle>
+      <Subtitle mono>Subtitle mono</Subtitle>
+      <Subtitle italic>Subtitle italic</Subtitle>
+    </div>
+
+    <div>
+      <Body>Body</Body>
+      <Body mono>Body mono</Body>
+      <Body italic>Body italic</Body>
     </div>
 
     <div className="flex flex-wrap items-center gap-2">
