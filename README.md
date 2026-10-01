@@ -33,12 +33,20 @@ npm install @thomas-forte/styles
 
 PR → squash-merge to `master` with a conventional subject. **Publish** (semantic-release, angular preset) bumps version, updates `CHANGELOG.md`, publishes to GitHub Packages, tags, and opens a GitHub Release.
 
-| Squash subject                                     | Bump  |
-| -------------------------------------------------- | ----- |
-| `fix:` / `perf:`                                   | patch |
-| `feat:`                                            | minor |
-| `BREAKING CHANGE:` footer on any releasable commit | major |
-| `chore:` / `docs:` / `ci:` / `refactor:`           | none  |
+| Squash subject                           | Bump  |
+| ---------------------------------------- | ----- |
+| `fix:` / `perf:`                         | patch |
+| `feat:`                                  | minor |
+| `feat:` / `fix:` / `perf:` + body footer | major |
+| `chore:` / `docs:` / `ci:` / `refactor:` | none  |
+
+Major needs both a releasable subject **and** a `BREAKING CHANGE:` line in the commit **body** (squash extended description), not the title:
+
+```text
+feat: rename Subtitle API
+
+BREAKING CHANGE: Subtitle now takes `text` instead of `children`.
+```
 
 ## Scripts
 
