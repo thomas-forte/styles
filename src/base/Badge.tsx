@@ -29,23 +29,25 @@ export type BadgeColorScheme =
   | "pink"
   | "gray"
   | "black"
-  | "white";
+  | "white"
+  | "code";
 
 const COLOR_SCHEME_CLASS: Record<BadgeColorScheme, string> = {
-  yellow: "bg-yellow-50 text-yellow-800 inset-ring-yellow-600/20",
-  green: "bg-green-50 text-green-800 inset-ring-green-600/20",
-  red: "bg-red-50 text-red-800 inset-ring-red-600/20",
-  blue: "bg-blue-50 text-blue-800 inset-ring-blue-600/20",
-  purple: "bg-purple-50 text-purple-800 inset-ring-purple-600/20",
-  orange: "bg-orange-50 text-orange-800 inset-ring-orange-600/20",
-  pink: "bg-pink-50 text-pink-800 inset-ring-pink-600/20",
-  gray: "bg-gray-50 text-gray-800 inset-ring-gray-600/20",
-  black: "bg-black text-white inset-ring-black/20",
-  white: "bg-white text-black inset-ring-white/20",
+  yellow: "bg-yellow-50 text-yellow-800 inset-ring-yellow-600/40",
+  green: "bg-green-50 text-green-800 inset-ring-green-600/40",
+  red: "bg-red-50 text-red-800 inset-ring-red-600/40",
+  blue: "bg-blue-50 text-blue-800 inset-ring-blue-600/40",
+  purple: "bg-purple-50 text-purple-800 inset-ring-purple-600/40",
+  orange: "bg-orange-50 text-orange-800 inset-ring-orange-600/40",
+  pink: "bg-pink-50 text-pink-800 inset-ring-pink-600/40",
+  gray: "bg-gray-50 text-gray-800 inset-ring-gray-600/40",
+  black: "bg-black text-white",
+  white: "bg-white text-black inset-ring-black/40",
+  code: "bg-zinc-950 text-emerald-300 inset-ring-emerald-600/40",
 };
 
 const BASE_CLASSES =
-  "inline-flex h-fit w-fit self-start items-center leading-none gap-1 rounded-md font-medium tracking-normal font-sans inset-ring";
+  "inline-flex h-fit w-fit self-auto items-center leading-none gap-1 rounded-md font-medium tracking-normal font-sans inset-ring";
 
 /** Compact status / label chip. */
 export const Badge = ({

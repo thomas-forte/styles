@@ -56,6 +56,7 @@ export const BaseDemoContent = () => (
       <Badge color="gray">Gray (default)</Badge>
       <Badge color="black">Black</Badge>
       <Badge color="white">White</Badge>
+      <Badge color="code">Code</Badge>
     </div>
 
     <div className="flex flex-wrap items-center gap-2">
