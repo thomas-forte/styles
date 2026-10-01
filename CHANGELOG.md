@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+# [1.8.0](https://github.com/thomas-forte/styles/compare/v1.7.0...v1.8.0) (2026-10-01)
+
+
+### Features
+
+* Base component expansion ([#13](https://github.com/thomas-forte/styles/issues/13)) ([3cd05c5](https://github.com/thomas-forte/styles/commit/3cd05c5f9a45a263c19b83226376604d7f6b40d8))
+
 # [1.7.0](https://github.com/thomas-forte/styles/compare/v1.6.0...v1.7.0) (2026-09-22)
 
 
