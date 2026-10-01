@@ -15,6 +15,8 @@ type MediaCardProps = Omit<CardProps, "children"> & {
   title?: ReactNode;
   /** String becomes {@link Subtitle}; nodes render as-is. */
   subtitle?: ReactNode;
+  /** Children nodes render as-is. */
+  children?: ReactNode;
   /** {@link CardTitleAction} list or a custom node. */
   actions?: CardTitleAction[] | ReactNode;
 };
@@ -26,6 +28,7 @@ export const MediaCard = ({
   media,
   title,
   subtitle,
+  children,
   actions,
 }: MediaCardProps) => (
   <Card
@@ -38,6 +41,7 @@ export const MediaCard = ({
         <div>
           {resolveCardTitle(title)}
           {resolveCardSubtitle(subtitle)}
+          {children}
         </div>
       </div>
       {resolveCardActions(actions)}

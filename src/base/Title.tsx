@@ -1,4 +1,9 @@
-import { type ReactNode } from "react";
+import {
+  Children,
+  cloneElement,
+  isValidElement,
+  type ReactNode,
+} from "react";
 import { Link } from "react-router";
 
 import { hasRenderableChildren } from "./BaseHelper";
@@ -25,6 +30,13 @@ const SIZE_CLASSES: Record<TitleSize, string> = {
   xl: "text-3xl tracking-[0.28em] md:text-4xl",
 };
 
+const CORRECT_TRACKING_CLASSES: Record<TitleSize, string> = {
+  sm: "-ml-[0.18em]",
+  md: "-ml-[0.2em]",
+  lg: "-ml-[0.24em]",
+  xl: "-ml-[0.28em]",
+};
+
 const BASE_CLASSES = "font-primary text-orange-200/85";
 
 /** Brand display heading; optional link via `to`. */
@@ -36,12 +48,31 @@ export const Title = ({
   className = "",
   children,
 }: TitleProps) => {
-  const layoutClasses = hasRenderableChildren(children)
-    ? "flex items-center gap-2"
-    : "";
+  const hasChildren = hasRenderableChildren(children);
+  const layoutClasses = hasChildren ? "flex items-center gap-2" : "";
   const classes = `${BASE_CLASSES} ${SIZE_CLASSES[size]} ${layoutClasses} ${className}`;
 
+  const correctedChildren = (): ReactNode => {
+    if (!hasChildren) return null;
+
+    const childArray = Children.toArray(children);
+    const [first, ...rest] = childArray;
+    if (!isValidElement<{ className?: string }>(first)) {
+      return children;
+    }
+
+    return [
+      cloneElement(first, {
+        className: [CORRECT_TRACKING_CLASSES[size], first.props.className]
+          .filter(Boolean)
+          .join(" "),
+      }),
+      ...rest,
+    ];
+  };
+
   const titleText = title || text;
+  const trailing = correctedChildren();
 
   if (to) {
     return (
@@ -51,7 +82,7 @@ export const Title = ({
         title={titleText}
       >
         {text}
-        {children}
+        {trailing}
       </Link>
     );
   }
@@ -62,7 +93,7 @@ export const Title = ({
       title={titleText}
     >
       {text}
-      {children}
+      {trailing}
     </h2>
   );
 };

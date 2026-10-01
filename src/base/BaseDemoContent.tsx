@@ -8,6 +8,8 @@ import {
   CheckIcon,
   ExclamationTriangleIcon,
 } from "@heroicons/react/24/outline";
+import { Link } from "./Link";
+import { Rating } from "./Rating";
 
 export const BaseDemoContent = () => (
   <div className="space-y-4">
@@ -31,6 +33,9 @@ export const BaseDemoContent = () => (
     </div>
 
     <div>
+      <Title text="Title with children">
+        <Badge color="green">Green</Badge>
+      </Title>
       <Title
         text="Title with link"
         to="/"
@@ -42,6 +47,10 @@ export const BaseDemoContent = () => (
       <Subtitle
         text="Subtitle mono"
         mono
+      />
+      <Subtitle
+        text="Subtitle italic"
+        italic
       />
     </div>
 
@@ -56,6 +65,7 @@ export const BaseDemoContent = () => (
       <Badge color="gray">Gray (default)</Badge>
       <Badge color="black">Black</Badge>
       <Badge color="white">White</Badge>
+      <Badge color="code">Code</Badge>
     </div>
 
     <div className="flex flex-wrap items-center gap-2">
@@ -111,6 +121,40 @@ export const BaseDemoContent = () => (
       <Hr spacing="sm" />
       <Hr spacing="md" />
       <Hr spacing="lg" />
+    </div>
+
+    <div>
+      <Link
+        href="/"
+        target="_blank"
+        title="Link"
+      >
+        Link
+      </Link>
+    </div>
+
+    <div>
+      <Rating rating={0} />
+      <Rating rating={1} />
+      <Rating rating={3} />
+      <Rating rating={4} />
+      <Rating rating={5} />
+      <Rating
+        rating={0}
+        base={10}
+      />
+      <Rating
+        rating={3}
+        base={10}
+      />
+      <Rating
+        rating={10}
+        base={10}
+      />
+      <Rating
+        rating={10}
+        base={20}
+      />
     </div>
   </div>
 );
