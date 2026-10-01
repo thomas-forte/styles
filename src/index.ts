@@ -13,6 +13,8 @@ export {
 export { Subtitle } from "./base/Subtitle";
 export { Title, type TitleSize } from "./base/Title";
 export { Hr, type HrProps } from "./base/Hr";
+export { Link } from "./base/Link";
+export { Rating, type RatingProps } from "./base/Rating";
 
 // buttons
 export {
