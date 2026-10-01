@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+# [2.0.0](https://github.com/thomas-forte/styles/compare/v1.8.0...v2.0.0) (2026-10-01)
+
+
+### Features
+
+* Rerun Release ([#12](https://github.com/thomas-forte/styles/issues/12)) ([#16](https://github.com/thomas-forte/styles/issues/16)) ([60c4f96](https://github.com/thomas-forte/styles/commit/60c4f9696d6a0b6c4b4e8b11998deb31f2d8a404))
+
+
+### BREAKING CHANGES
+
+* Subtitle now takes `text` instead of `children`.
+
 # [1.8.0](https://github.com/thomas-forte/styles/compare/v1.7.0...v1.8.0) (2026-10-01)
 
 
