@@ -31,14 +31,14 @@ npm install @thomas-forte/styles
 
 ## Release
 
-PR → squash-merge to `master` with a conventional subject. **Publish** (semantic-release) bumps version, updates `CHANGELOG.md`, publishes to GitHub Packages, tags, and opens a GitHub Release.
+PR → squash-merge to `master` with a conventional subject. **Publish** (semantic-release, angular preset) bumps version, updates `CHANGELOG.md`, publishes to GitHub Packages, tags, and opens a GitHub Release.
 
-| Squash subject                           | Bump  |
-| ---------------------------------------- | ----- |
-| `fix:` / `perf:`                         | patch |
-| `feat:`                                  | minor |
-| `feat!:` / `fix!:` / `BREAKING CHANGE:`  | major |
-| `chore:` / `docs:` / `ci:` / `refactor:` | none  |
+| Squash subject                                     | Bump  |
+| -------------------------------------------------- | ----- |
+| `fix:` / `perf:`                                   | patch |
+| `feat:`                                            | minor |
+| `BREAKING CHANGE:` footer on any releasable commit | major |
+| `chore:` / `docs:` / `ci:` / `refactor:`           | none  |
 
 ## Scripts
 
