@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.0.1](https://github.com/thomas-forte/styles/compare/v2.0.0...v2.0.1) (2026-10-02)
+
+
+### Bug Fixes
+
+* updating button self styling for flex ([#17](https://github.com/thomas-forte/styles/issues/17)) ([03e4c03](https://github.com/thomas-forte/styles/commit/03e4c03b85f3ea6c6210dd28fadccd72d769e21e))
+
 # [2.0.0](https://github.com/thomas-forte/styles/compare/v1.8.0...v2.0.0) (2026-10-01)
 
 
