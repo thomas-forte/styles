@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+# [2.1.0](https://github.com/thomas-forte/styles/compare/v2.0.1...v2.1.0) (2026-10-05)
+
+
+### Features
+
+* adding breakLine option, adding noSelect option, setting cursor style ([#18](https://github.com/thomas-forte/styles/issues/18)) ([db88bac](https://github.com/thomas-forte/styles/commit/db88bacdff2283ec1602463829837d055643ba24))
+
 ## [2.0.1](https://github.com/thomas-forte/styles/compare/v2.0.0...v2.0.1) (2026-10-02)
 
 
