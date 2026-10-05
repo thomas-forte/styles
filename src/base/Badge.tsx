@@ -9,6 +9,10 @@ export type BadgeProps = {
   size?: BadgeSize;
   /** Native tooltip on hover. */
   title?: string;
+  /** Break the badge into multiple lines. */
+  breakLines?: boolean;
+  /** Prevent the badge from being selected. */
+  noSelect?: boolean;
 };
 
 export type BadgeSize = "sm" | "md" | "lg";
@@ -47,7 +51,7 @@ const COLOR_SCHEME_CLASS: Record<BadgeColorScheme, string> = {
 };
 
 const BASE_CLASSES =
-  "inline-flex h-fit w-fit self-auto items-center leading-none gap-1 rounded-md font-medium tracking-normal font-sans inset-ring";
+  "inline-flex h-fit w-fit self-auto items-center leading-none gap-1 rounded-md font-medium tracking-normal font-sans inset-ring cursor-default";
 
 /** Compact status / label chip. */
 export const Badge = ({
@@ -56,8 +60,10 @@ export const Badge = ({
   size = "sm",
   className = "",
   title,
+  breakLines = false,
+  noSelect = false,
 }: BadgeProps) => {
-  const classes = `${BASE_CLASSES} ${COLOR_SCHEME_CLASS[color]} ${SIZE_CLASS[size]} ${className}`;
+  const classes = `${BASE_CLASSES} ${COLOR_SCHEME_CLASS[color]} ${SIZE_CLASS[size]} ${className} ${breakLines ? "break-all" : "text-nowrap"} ${noSelect ? "select-none" : ""}`;
   return (
     <span
       className={classes}

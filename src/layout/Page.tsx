@@ -36,7 +36,9 @@ export const Page = ({
         <ResponseTimeBadge processTime={processTime} />
       )}
       {actions && (
-        <div className="flex justify-center items-center mb-4">{actions}</div>
+        <div className="flex justify-center items-center mb-4 gap-2">
+          {actions}
+        </div>
       )}
     </>
   );
