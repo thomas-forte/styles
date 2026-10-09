@@ -1,7 +1,7 @@
 import { type ReactNode } from "react";
 
-import { Subtitle } from "../base/Subtitle";
-import { Title } from "../base/Title";
+import { Body } from "../typography/Body";
+import { Title } from "../typography/Title";
 import { CardTitleActions, type CardTitleAction } from "./CardTitleActions";
 
 export const resolveCardTitle = (value: ReactNode) => {
@@ -9,7 +9,12 @@ export const resolveCardTitle = (value: ReactNode) => {
     return undefined;
   }
   if (typeof value === "string") {
-    return <Title text={value} />;
+    return (
+      <Title
+        text={value}
+        as="h4"
+      />
+    );
   }
   return value;
 };
@@ -19,7 +24,7 @@ export const resolveCardSubtitle = (value: ReactNode) => {
     return undefined;
   }
   if (typeof value === "string") {
-    return <Subtitle>{value}</Subtitle>;
+    return <Body>{value}</Body>;
   }
   return value;
 };

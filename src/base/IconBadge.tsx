@@ -7,7 +7,7 @@ import {
 } from "react";
 
 import { Badge, type BadgeProps, type BadgeSize } from "./Badge";
-import { hasRenderableChildren } from "./BaseHelper";
+import { hasRenderableChildren } from "../utils/base";
 
 /** Heroicon-style SVG component, or a prebuilt React node. */
 export type IconComponent = ComponentType<SVGProps<SVGSVGElement>>;

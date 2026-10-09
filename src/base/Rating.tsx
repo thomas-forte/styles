@@ -15,7 +15,7 @@ export const Rating = ({ rating, base = 5 }: RatingProps) => {
       {Array.from({ length: base }).map((_, index) => (
         <StarIcon
           key={index}
-          className={`w-4 h-4 ${index < (rating ?? 0) ? "text-orange-500" : "text-slate-300/85"}`}
+          className={`size-4 ${index < rating ? "text-orange-500" : "text-slate-300/85"}`}
         />
       ))}
     </div>

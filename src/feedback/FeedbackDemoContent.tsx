@@ -18,9 +18,8 @@ export const FeedbackDemoContent = () => (
       <p className="text-sm text-gray-300">Slate is the default color.</p>
     </div>
     <div>
-      <ResponseTimeBadge processTime="42.5" />
-      <ResponseTimeBadge processTime="COW" />
-      <ResponseTimeBadge processTime="42.555555555555" />
+      <ResponseTimeBadge processTime={42.5} />
+      <ResponseTimeBadge processTime={NaN} />
     </div>
   </div>
 );

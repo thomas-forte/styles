@@ -1,6 +1,6 @@
 import { createElement, isValidElement, type ReactNode } from "react";
 
-import { hasRenderableChildren } from "../base/BaseHelper";
+import { hasRenderableChildren } from "../utils/base";
 import { type IconComponent } from "../base/IconBadge";
 import { Button, type ButtonProps } from "./Button";
 import { ICON_SIZE_CLASS } from "./buttonStyles";

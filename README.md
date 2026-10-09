@@ -43,9 +43,9 @@ PR → squash-merge to `master` with a conventional subject. **Publish** (semant
 Major needs both a releasable subject **and** a `BREAKING CHANGE:` line in the commit **body** (squash extended description), not the title:
 
 ```text
-feat: rename Subtitle API
+feat: split typography into its own folder
 
-BREAKING CHANGE: Subtitle now takes `text` instead of `children`.
+BREAKING CHANGE: Subtitle is removed; use Body. Title `size` is replaced by `as`.
 ```
 
 ## Scripts
@@ -62,19 +62,21 @@ Demo app lives in `dev/` (not published). Pages deploys from `master` via `.gith
 
 ## Folders
 
-| Folder      | Purpose                              |
-| ----------- | ------------------------------------ |
-| `base/`     | Typography, chips, and `Hr`          |
-| `buttons/`  | Buttons and toggle                   |
-| `cards/`    | Card shells and title/action rows    |
-| `forms/`    | Inputs, selects, shared field styles |
-| `icons/`    | Local SVG icon components            |
-| `layout/`   | Page chrome                          |
-| `dialogs/`  | Modals and dialogs                   |
-| `navigation/` | Top bar, icon nav, and actions menu |
-| `feedback/` | Loading and response-time indicators |
-| `data/`     | Console / copy / clock helpers       |
-| `demo/`     | Living catalog (`Demo`)              |
+| Folder        | Purpose                                                |
+| ------------- | ------------------------------------------------------ |
+| `base/`       | Badges, icon badges, rating, and `Hr`                  |
+| `typography/` | `Heading`, `Title`, `Body`, `Link`, `RouterLink`, `Dot` |
+| `buttons/`    | Buttons and toggle                                     |
+| `cards/`      | Card shells and title/action rows                      |
+| `forms/`      | Inputs, selects, shared field styles                   |
+| `icons/`      | Local SVG icon components                              |
+| `layout/`     | Page chrome and `Main` container                       |
+| `dialogs/`    | Modals and dialogs                                     |
+| `navigation/` | Top bar, icon nav, and actions menu                    |
+| `feedback/`   | Loading and response-time indicators                   |
+| `data/`       | `List`, console / copy / clock helpers                 |
+| `utils/`      | Internal helpers (not exported)                        |
+| `demo/`       | Living catalog (`Demo`)                                |
 
 ## Rules
 

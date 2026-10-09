@@ -13,7 +13,7 @@ type MediaCardProps = Omit<CardProps, "children"> & {
   media: ReactNode;
   /** String becomes {@link Title}; nodes render as-is. */
   title?: ReactNode;
-  /** String becomes {@link Subtitle}; nodes render as-is. */
+  /** String becomes {@link Body}; nodes render as-is. */
   subtitle?: ReactNode;
   /** Children nodes render as-is. */
   children?: ReactNode;

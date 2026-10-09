@@ -1,60 +1,15 @@
 import { Badge } from "./Badge";
 import { Hr } from "./Hr";
-import { Title } from "./Title";
-import { Subtitle } from "./Subtitle";
 import { IconBadge } from "./IconBadge";
 import {
   CheckCircleIcon,
   CheckIcon,
   ExclamationTriangleIcon,
 } from "@heroicons/react/24/outline";
-import { Link } from "./Link";
 import { Rating } from "./Rating";
-import { Body } from "./Body";
 
 export const BaseDemoContent = () => (
   <div className="space-y-4">
-    <div>
-      <Title
-        text="Title sm"
-        size="sm"
-      />
-      <Title
-        text="Title md (default)"
-        size="md"
-      />
-      <Title
-        text="Title lg"
-        size="lg"
-      />
-      <Title
-        text="Title xl"
-        size="xl"
-      />
-    </div>
-
-    <div>
-      <Title text="Title with children">
-        <Badge color="green">Green</Badge>
-      </Title>
-      <Title
-        text="Title with link"
-        to="/"
-      />
-    </div>
-
-    <div>
-      <Subtitle>Subtitle</Subtitle>
-      <Subtitle mono>Subtitle mono</Subtitle>
-      <Subtitle italic>Subtitle italic</Subtitle>
-    </div>
-
-    <div>
-      <Body>Body</Body>
-      <Body mono>Body mono</Body>
-      <Body italic>Body italic</Body>
-    </div>
-
     <div className="flex flex-wrap items-center gap-2">
       <Badge color="yellow">Yellow</Badge>
       <Badge color="green">Green</Badge>
@@ -122,16 +77,6 @@ export const BaseDemoContent = () => (
       <Hr spacing="sm" />
       <Hr spacing="md" />
       <Hr spacing="lg" />
-    </div>
-
-    <div>
-      <Link
-        href="/"
-        target="_blank"
-        title="Link"
-      >
-        Link
-      </Link>
     </div>
 
     <div>
