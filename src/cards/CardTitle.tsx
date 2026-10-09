@@ -1,12 +1,13 @@
 import { type ReactNode } from "react";
 
-import { hasRenderableChildren } from "../base/BaseHelper";
+import { Hr } from "../base/Hr";
+import { hasRenderableChildren } from "../utils/base";
 import { resolveCardSubtitle, resolveCardTitle } from "./cardText";
 
 type CardTitleProps = {
   /** String becomes {@link Title}; nodes render as-is. */
   title?: ReactNode;
-  /** String becomes {@link Subtitle}; nodes render as-is. */
+  /** String becomes {@link Body}; nodes render as-is. */
   subtitle?: ReactNode;
   /** Skip the divider under the header. Defaults to `false`. */
   hideHr?: boolean;
@@ -34,7 +35,7 @@ export const CardTitle = ({
         </div>
         <div className="self-end md:self-auto">{children}</div>
       </div>
-      {!hideHr && <hr className="my-4 border-slate-700" />}
+      {!hideHr && <Hr />}
     </>
   );
 };

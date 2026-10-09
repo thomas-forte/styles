@@ -10,12 +10,16 @@ export {
   type IconBadgeProps,
   type IconComponent,
 } from "./base/IconBadge";
-export { Body } from "./base/Body";
-export { Subtitle } from "./base/Subtitle";
-export { Title, type TitleSize } from "./base/Title";
 export { Hr, type HrProps } from "./base/Hr";
-export { Link } from "./base/Link";
 export { Rating, type RatingProps } from "./base/Rating";
+
+// typography
+export { Body } from "./typography/Body";
+export { Title } from "./typography/Title";
+export { Link } from "./typography/Link";
+export { RouterLink } from "./typography/RouterLink";
+export { Dot } from "./typography/Dot";
+export { Heading, type HeadingType } from "./typography/Heading";
 
 // buttons
 export {
@@ -50,6 +54,7 @@ export { Clock } from "./data/Clock";
 export { ConsoleArray } from "./data/ConsoleArray";
 export { ConsoleBox } from "./data/ConsoleBox";
 export { CopyBox } from "./data/CopyBox";
+export { List, type ListProps } from "./data/List";
 
 // feedback
 export {
@@ -73,6 +78,7 @@ export { IconWrapper } from "./icons/IconWrapper";
 
 // layout
 export { Breadcrumbs, type BreadcrumbItem } from "./layout/Breadcrumbs";
+export { Main } from "./layout/Main";
 export { Page } from "./layout/Page";
 export { Panel } from "./layout/Panel";
 export { PanelItem, type PanelItemProps } from "./layout/PanelItem";

@@ -1,13 +1,17 @@
 export type HrProps = {
-  spacing?: "sm" | "md" | "lg";
+  /** Vertical margin around the rule. Defaults to `"md"`. */
+  spacing?: HrSpacing;
 };
 
-const SIZE_CLASS: Record<NonNullable<HrProps["spacing"]>, string> = {
+type HrSpacing = "sm" | "md" | "lg";
+
+const SPACING_CLASS: Record<HrSpacing, string> = {
   sm: "my-1",
   md: "my-2",
   lg: "my-4",
 };
 
+/** Horizontal divider. */
 export const Hr = ({ spacing = "md" }: HrProps) => (
-  <hr className={`border-slate-700 ${SIZE_CLASS[spacing]}`} />
+  <hr className={`border-slate-700 ${SPACING_CLASS[spacing]}`} />
 );

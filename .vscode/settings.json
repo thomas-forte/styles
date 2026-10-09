@@ -28,5 +28,6 @@
     "Renderable",
     "Trepal",
     "tsgolint"
-  ]
+  ],
+  "scm.defaultViewMode": "tree",
 }

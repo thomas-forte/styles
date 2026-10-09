@@ -4,6 +4,8 @@ import { Clock } from "./Clock";
 import { ConsoleArray } from "./ConsoleArray";
 import { ConsoleBox } from "./ConsoleBox";
 import { CopyBox } from "./CopyBox";
+import { List } from "./List";
+import { Body } from "../typography/Body";
 
 export const DataDemoContent = () => {
   const [consoleSelected, setConsoleSelected] = useState<string | null>(null);
@@ -46,6 +48,30 @@ export const DataDemoContent = () => {
             display={(item) => item}
           />
         </ConsoleBox>
+      </div>
+
+      <div className="space-y-4">
+        <List
+          items={["alpha", "beta", "gamma"]}
+          renderItem={(item) => <Body>{item}</Body>}
+        />
+        <List
+          items={["alpha", "beta", "gamma"]}
+          renderItem={(item) => <Body>{item}</Body>}
+          dividers
+          spacing="sm"
+        />
+        <List
+          items={["alpha", "beta", "gamma"]}
+          renderItem={(item) => <Body>{item}</Body>}
+          direction="row"
+          dividers
+        />
+        <List
+          items={[]}
+          renderItem={(item: string) => <Body>{item}</Body>}
+          emptyMessage="Empty list message"
+        />
       </div>
 
       <div className="size-40">

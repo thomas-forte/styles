@@ -8,8 +8,9 @@ type PageProps = {
   children: ReactNode;
   /** Replaces the page with {@link Loading}. Defaults to `false`. */
   isLoading?: boolean;
-  /** When defined (including `""`), shows {@link ResponseTimeBadge}. */
-  processTime?: string;
+  /** When defined, shows {@link ResponseTimeBadge}. */
+  processTime?: number;
+  /** The breadcrumbs to display. */
   breadcrumbs?: BreadcrumbItem[];
   /** Centered footer actions under the page. */
   actions?: ReactNode;
@@ -32,7 +33,7 @@ export const Page = ({
         {breadcrumbs && <Breadcrumbs items={breadcrumbs} />}
         {children}
       </div>
-      {processTime != undefined && (
+      {processTime !== undefined && (
         <ResponseTimeBadge processTime={processTime} />
       )}
       {actions && (

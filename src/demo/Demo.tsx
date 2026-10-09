@@ -1,10 +1,11 @@
 import { type BreadcrumbItem } from "../layout/Breadcrumbs";
 import { Page } from "../layout/Page";
-import { Subtitle } from "../base/Subtitle";
-import { Title } from "../base/Title";
+import { Body } from "../typography/Body";
+import { Title } from "../typography/Title";
 import { Card } from "../cards/Card";
 
 import { BaseDemoContent } from "../base/BaseDemoContent";
+import { TypographyDemoContent } from "../typography/TypographyDemoContent";
 import { ButtonsDemoContent } from "../buttons/ButtonsDemoContent";
 import { CardsDemoContent } from "../cards/CardsDemoContent";
 import { DataDemoContent } from "../data/DataDemoContent";
@@ -23,17 +24,14 @@ interface DemoProps {
 export const Demo = ({ breadcrumbs }: DemoProps) => (
   <Page
     breadcrumbs={breadcrumbs}
-    processTime="12.345"
+    processTime={12.345}
   >
-    <Title
-      text="Style library"
-      size="xl"
-    />
-    <Subtitle>Demo page of the style library.</Subtitle>
+    <Title text="Style library" />
+    <Body>Demo page of the style library.</Body>
 
     <Title
       text="Github repository"
-      size="sm"
+      as="h6"
       to="https://github.com/thomas-forte/styles"
     >
       <LinkIcon className="size-4" />
@@ -42,6 +40,11 @@ export const Demo = ({ breadcrumbs }: DemoProps) => (
     <Card>
       <Title text="base/" />
       <BaseDemoContent />
+    </Card>
+
+    <Card>
+      <Title text="typography/" />
+      <TypographyDemoContent />
     </Card>
 
     <Card>
