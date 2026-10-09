@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+# [2.2.0](https://github.com/thomas-forte/styles/compare/v2.1.0...v2.2.0) (2026-10-09)
+
+
+### Features
+
+* Added typography module, reworked base components, organized mismatched components ([#19](https://github.com/thomas-forte/styles/issues/19)) ([9aeca23](https://github.com/thomas-forte/styles/commit/9aeca23069b9a010d80b82993748eb40afd7b5b3))
+
 # [2.1.0](https://github.com/thomas-forte/styles/compare/v2.0.1...v2.1.0) (2026-10-05)
 
 
