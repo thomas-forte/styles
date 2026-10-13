@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.0.1](https://github.com/thomas-forte/styles/compare/v3.0.0...v3.0.1) (2026-10-13)
+
+
+### Bug Fixes
+
+* Response time badge documentation and default adjustment ([#21](https://github.com/thomas-forte/styles/issues/21)) ([e4138a3](https://github.com/thomas-forte/styles/commit/e4138a37240e9ccc55e24063c6e9566b18698465))
+
 # [3.0.0](https://github.com/thomas-forte/styles/compare/v2.2.0...v3.0.0) (2026-10-13)
 
 
