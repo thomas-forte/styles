@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+# [3.0.0](https://github.com/thomas-forte/styles/compare/v2.2.0...v3.0.0) (2026-10-13)
+
+
+### Features
+
+* Updating response time to use an icon, implemented a threshold for coloring ([#20](https://github.com/thomas-forte/styles/issues/20)) ([8dbf82e](https://github.com/thomas-forte/styles/commit/8dbf82e64379d6f37494134ff1461b96feb99235))
+
+
+### BREAKING CHANGES
+
+* Base components reworked and redesigned multiple breaking changes (#19)
+
 # [2.2.0](https://github.com/thomas-forte/styles/compare/v2.1.0...v2.2.0) (2026-10-09)
 
 
