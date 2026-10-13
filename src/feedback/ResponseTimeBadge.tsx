@@ -4,7 +4,9 @@ const BASE_CLASS =
   "flex items-center gap-1 justify-end text-xs text-slate-500 text-right select-none mt-3";
 
 type ResponseTimeBadgeProps = {
+  /** The response time in milliseconds. */
   processTime: number;
+  /** The threshold in milliseconds above which the badge will be red. Defaults to 50ms. */
   threshold?: number;
 };
 
@@ -14,7 +16,7 @@ type ResponseTimeBadgeProps = {
  */
 export const ResponseTimeBadge = ({
   processTime,
-  threshold = 25,
+  threshold = 50,
 }: ResponseTimeBadgeProps) => {
   let responseTime: string;
   let className = "";
