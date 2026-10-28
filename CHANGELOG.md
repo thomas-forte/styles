@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+# [3.1.0](https://github.com/thomas-forte/styles/compare/v3.0.1...v3.1.0) (2026-10-28)
+
+
+### Features
+
+* Fix history stack issue and enhance Demo component props ([#23](https://github.com/thomas-forte/styles/issues/23)) ([0bfc150](https://github.com/thomas-forte/styles/commit/0bfc1509a753e18a8a0ae108234ed328b5c4d7af))
+
 ## [3.0.1](https://github.com/thomas-forte/styles/compare/v3.0.0...v3.0.1) (2026-10-13)
 
 
