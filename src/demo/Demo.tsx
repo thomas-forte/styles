@@ -19,15 +19,17 @@ import { LinkIcon } from "@heroicons/react/24/solid";
 
 interface DemoProps {
   breadcrumbs: BreadcrumbItem[];
+  title?: string;
+  description?: string;
 }
 
-export const Demo = ({ breadcrumbs }: DemoProps) => (
+export const Demo = ({ breadcrumbs, title, description }: DemoProps) => (
   <Page
     breadcrumbs={breadcrumbs}
     processTime={12.345}
   >
-    <Title text="Style library" />
-    <Body>Demo page of the style library.</Body>
+    <Title text={title ?? "Style library"} />
+    <Body>{description ?? "Demo page of the style library."}</Body>
 
     <Title
       text="Github repository"
