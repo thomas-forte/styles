@@ -9,6 +9,7 @@ import { NavLink } from "react-router";
 
 import { Fragment, useState } from "react";
 
+import { isExternalPath } from "../utils/path";
 import type { NavbarItem } from "./NavbarItem";
 import type { NavbarActionItem } from "./NavbarActionItem";
 import { NavbarIcon } from "./NavbarIcon";
@@ -154,6 +155,14 @@ export const Navbar = ({
                               >
                                 {action.label}
                               </button>
+                            ) : action.path && isExternalPath(action.path) ? (
+                              <a
+                                href={action.path}
+                                onClick={() => setSidebarOpen(false)}
+                                className="block rounded-md px-2 py-2 text-sm/6 font-semibold text-slate-300 transition hover:bg-slate-800 hover:text-white"
+                              >
+                                {action.label}
+                              </a>
                             ) : (
                               <NavLink
                                 to={action.path ?? ""}
