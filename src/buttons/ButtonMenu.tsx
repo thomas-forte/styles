@@ -10,6 +10,7 @@ import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import { NavLink } from "react-router";
 
 import { Hr } from "../base/Hr";
+import { isExternalPath } from "../utils/path";
 import { Button, type ButtonProps } from "./Button";
 import { ICON_SIZE_CLASS } from "./buttonStyles";
 
@@ -90,6 +91,13 @@ export const ButtonMenu = ({
               >
                 {item.label}
               </button>
+            ) : item.path && isExternalPath(item.path) ? (
+              <a
+                href={item.path}
+                className={ITEM_CLASS}
+              >
+                {item.label}
+              </a>
             ) : (
               <NavLink
                 to={item.path ?? ""}
