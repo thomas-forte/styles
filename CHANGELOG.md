@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+# [3.2.0](https://github.com/thomas-forte/styles/compare/v3.1.0...v3.2.0) (2026-11-06)
+
+
+### Features
+
+* adding body to panel and adding disable control to form actions ([#25](https://github.com/thomas-forte/styles/issues/25)) ([4b5a6a3](https://github.com/thomas-forte/styles/commit/4b5a6a351eed8e08bbc26ae4d50edbbf689de42c))
+
 # [3.1.0](https://github.com/thomas-forte/styles/compare/v3.0.1...v3.1.0) (2026-10-28)
 
 
