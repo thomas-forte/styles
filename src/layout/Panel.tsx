@@ -13,6 +13,7 @@ export const Panel = ({ items }: PanelProps) => (
           key={index}
           title={item.title}
           lines={item.lines}
+          body={item.body}
         />
       ))}
     </ul>

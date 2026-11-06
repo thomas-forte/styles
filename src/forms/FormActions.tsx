@@ -6,6 +6,8 @@ export type FormActionsProps = {
   actionButtonColor?: ButtonColorScheme;
   /** Disables both buttons and swaps submit label to "Submitting...". */
   isSubmitting?: boolean;
+  /** Disables submit while cancel stays available. */
+  submitDisabled?: boolean;
   /** Defaults to `"Cancel"`. */
   cancelLabel?: string;
   /** Defaults to `"Save"`. */
@@ -17,6 +19,7 @@ export const FormActions = ({
   onCancel,
   actionButtonColor = "slate",
   isSubmitting = false,
+  submitDisabled = false,
   cancelLabel = "Cancel",
   submitLabel = "Save",
 }: FormActionsProps) => (
@@ -31,7 +34,7 @@ export const FormActions = ({
     <Button
       type="submit"
       color={actionButtonColor}
-      disabled={isSubmitting}
+      disabled={isSubmitting || submitDisabled}
     >
       {isSubmitting ? "Submitting..." : submitLabel}
     </Button>

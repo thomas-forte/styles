@@ -2,16 +2,19 @@ export type PanelItemProps = {
   title?: string;
   /** Key/value lines under the title. */
   lines?: Record<string, string>;
+  /** Preformatted text under the title. */
+  body?: string;
 };
 
 /** Single bordered row for {@link Panel}. */
-export const PanelItem = ({ title, lines }: PanelItemProps) => (
+export const PanelItem = ({ title, lines, body }: PanelItemProps) => (
   <li className="rounded-md border border-styles-primary-border bg-slate-950/50 px-3 py-2">
     {title && (
       <p>
         <span className="font-medium text-slate-200">{title}</span>
       </p>
     )}
+    {body && <p className="whitespace-pre-wrap">{body}</p>}
     {lines &&
       Object.entries(lines).map(([key, value]) => (
         <p key={key}>
