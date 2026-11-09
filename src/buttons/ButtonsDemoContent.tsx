@@ -2,6 +2,7 @@ import { useState } from "react";
 import { CheckCircleIcon } from "@heroicons/react/24/outline";
 
 import { Button } from "./Button";
+import { ButtonGroup } from "./ButtonGroup";
 import { ButtonMenu } from "./ButtonMenu";
 import { IconButton } from "./IconButton";
 import { ShowHideButton } from "./ShowHideButton";
@@ -9,6 +10,7 @@ import { ShowHideButton } from "./ShowHideButton";
 export const ButtonsDemoContent = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [menuNote, setMenuNote] = useState("");
+  const [groupValue, setGroupValue] = useState("amber");
 
   return (
     <div className="space-y-4">
@@ -19,6 +21,17 @@ export const ButtonsDemoContent = () => {
         <Button color="rose">rose</Button>
         <Button color="zinc">zinc</Button>
       </div>
+
+      <ButtonGroup
+        label="Example"
+        value={groupValue}
+        onChange={setGroupValue}
+        options={[
+          { value: "slate", label: "Slate" },
+          { value: "cyan", label: "Cyan" },
+          { value: "amber", label: "Amber" },
+        ]}
+      />
 
       <div className="flex flex-wrap items-center gap-2">
         <Button size="sm">sm</Button>
