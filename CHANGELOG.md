@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.3.1](https://github.com/thomas-forte/styles/compare/v3.3.0...v3.3.1) (2026-11-09)
+
+
+### Bug Fixes
+
+* evenly spacing the button group items ([#27](https://github.com/thomas-forte/styles/issues/27)) ([f708e31](https://github.com/thomas-forte/styles/commit/f708e319593e59836657234c1dca5d69dd6ea3a5))
+
 # [3.3.0](https://github.com/thomas-forte/styles/compare/v3.2.0...v3.3.0) (2026-11-09)
 
 
