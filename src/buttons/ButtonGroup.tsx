@@ -36,7 +36,7 @@ const segmentRadius = (index: number, count: number) => {
   return "rounded-none";
 };
 
-/** Joined {@link Button}s. One option is selected. */
+/** Joined {@link Button}s that fill their container and share the row evenly. */
 export function ButtonGroup<T extends string | number | boolean>({
   options,
   value,
@@ -53,7 +53,7 @@ export function ButtonGroup<T extends string | number | boolean>({
       onChange={onChange}
       disabled={disabled}
       aria-label={label}
-      className={`inline-flex ${className}`}
+      className={`flex w-full justify-evenly ${className}`}
     >
       {options.map((option, index) => {
         const selected = value === option.value;
@@ -70,7 +70,9 @@ export function ButtonGroup<T extends string | number | boolean>({
             title={option.title ?? option.label}
             className={`${segmentRadius(index, options.length)} ${
               index > 0 ? "-ml-px" : ""
-            } ${selected ? "relative z-10" : "relative"}`}
+            } min-w-0 flex-1 justify-center ${
+              selected ? "relative z-10" : "relative"
+            }`}
           >
             {option.label}
           </Radio>
