@@ -7,6 +7,8 @@ export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   size?: ButtonSize;
   /** Defaults to `"slate"`. */
   color?: ButtonColorScheme;
+  /** Defaults to `true`. Set `false` when the caller supplies the radius. */
+  rounded?: boolean;
   /** Native tooltip; defaults to string/number children when omitted. */
   title?: string;
 };
@@ -31,7 +33,7 @@ const COLOR_SCHEME_CLASS: Record<ButtonColorScheme, string> = {
 };
 
 const BASE_BUTTON_CLASS =
-  "inline-flex h-fit w-fit self-auto items-center leading-none cursor-pointer rounded-md border font-medium transition disabled:cursor-not-allowed disabled:opacity-50";
+  "inline-flex h-fit w-fit self-auto items-center leading-none cursor-pointer border font-medium transition disabled:cursor-not-allowed disabled:opacity-50";
 
 /** Standard bordered button. Forwards native button attributes. */
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
@@ -41,12 +43,21 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       className = "",
       size = "md",
       color = "slate",
+      rounded = true,
       title = "",
       ...props
     },
     ref,
   ) {
-    const classes = `${BASE_BUTTON_CLASS} ${SIZE_CLASS[size]} ${className} ${COLOR_SCHEME_CLASS[color]}`;
+    const classes = [
+      BASE_BUTTON_CLASS,
+      rounded ? "rounded-md" : "",
+      SIZE_CLASS[size],
+      className,
+      COLOR_SCHEME_CLASS[color],
+    ]
+      .filter(Boolean)
+      .join(" ");
     return (
       <button
         ref={ref}
