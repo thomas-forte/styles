@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+# [3.4.0](https://github.com/thomas-forte/styles/compare/v3.3.2...v3.4.0) (2026-11-09)
+
+
+### Features
+
+* converting button group labels to a react node, adjusting props ([#29](https://github.com/thomas-forte/styles/issues/29)) ([bf4ecaa](https://github.com/thomas-forte/styles/commit/bf4ecaad72a8a8dd2337dfcb18326f925a3f0b4f))
+
 ## [3.3.2](https://github.com/thomas-forte/styles/compare/v3.3.1...v3.3.2) (2026-11-09)
 
 
