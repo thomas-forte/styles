@@ -23,13 +23,12 @@ export const ButtonsDemoContent = () => {
       </div>
 
       <ButtonGroup
-        label="Example"
         value={groupValue}
         onChange={setGroupValue}
         options={[
-          { value: "slate", label: "Slate" },
-          { value: "cyan", label: "Cyan" },
-          { value: "amber", label: "Amber" },
+          { value: "yes", label: "Yes" },
+          { value: "no", label: "No" },
+          { value: "maybe", label: "Maybe?" },
         ]}
       />
 

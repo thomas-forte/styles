@@ -1,10 +1,11 @@
+import { type ReactNode } from "react";
 import { Radio, RadioGroup } from "@headlessui/react";
 
 import { Button, type ButtonColorScheme, type ButtonSize } from "./Button";
 
 export type ButtonGroupOption<T extends string | number | boolean> = {
   value: T;
-  label: string;
+  label: ReactNode;
   title?: string;
   disabled?: boolean;
 };
@@ -13,12 +14,12 @@ export type ButtonGroupProps<T extends string | number | boolean> = {
   options: readonly ButtonGroupOption<T>[];
   value: T;
   onChange: (value: T) => void;
-  /** Accessible name for the group. */
-  label: string;
   /** Defaults to `"md"`. */
   size?: ButtonSize;
-  /** Selected option color. Defaults to `"amber"`. */
+  /** Selected option color. Defaults to `"slate"`. */
   color?: ButtonColorScheme;
+  /** Color of the selected option. Defaults to `"amber"`. */
+  activeColor?: ButtonColorScheme;
   className?: string;
   disabled?: boolean;
 };
@@ -41,9 +42,9 @@ export function ButtonGroup<T extends string | number | boolean>({
   options,
   value,
   onChange,
-  label,
   size = "md",
-  color = "amber",
+  color = "slate",
+  activeColor = "amber",
   className = "",
   disabled = false,
 }: ButtonGroupProps<T>) {
@@ -52,7 +53,6 @@ export function ButtonGroup<T extends string | number | boolean>({
       value={value}
       onChange={onChange}
       disabled={disabled}
-      aria-label={label}
       className={`flex w-full justify-evenly ${className}`}
     >
       {options.map((option, index) => {
@@ -64,13 +64,19 @@ export function ButtonGroup<T extends string | number | boolean>({
             value={option.value}
             type="button"
             size={size}
-            color={selected ? color : "slate"}
+            color={selected ? activeColor : color}
             rounded={false}
             disabled={disabled || option.disabled}
-            title={option.title ?? option.label}
+            title={
+              option.title ??
+              (typeof option.label === "string" ||
+              typeof option.label === "number"
+                ? String(option.label)
+                : undefined)
+            }
             className={`${segmentRadius(index, options.length)} ${
               index > 0 ? "-ml-px" : ""
-            } min-w-0 flex-1 justify-center ${
+            } min-w-0 flex-1 justify-center h-full ${
               selected ? "relative z-10" : "relative"
             }`}
           >
