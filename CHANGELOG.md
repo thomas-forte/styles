@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.3.2](https://github.com/thomas-forte/styles/compare/v3.3.1...v3.3.2) (2026-11-09)
+
+
+### Bug Fixes
+
+* missed export for ButtonGroup ([#28](https://github.com/thomas-forte/styles/issues/28)) ([7990e2e](https://github.com/thomas-forte/styles/commit/7990e2e4f8d52c5543b5577e2c6082a0e9b73f4e))
+
 ## [3.3.1](https://github.com/thomas-forte/styles/compare/v3.3.0...v3.3.1) (2026-11-09)
 
 
