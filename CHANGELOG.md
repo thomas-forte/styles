@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+# [3.3.0](https://github.com/thomas-forte/styles/compare/v3.2.0...v3.3.0) (2026-11-09)
+
+
+### Features
+
+* Adding ButtonGroup component ([#26](https://github.com/thomas-forte/styles/issues/26)) ([9ace7c0](https://github.com/thomas-forte/styles/commit/9ace7c05edff421681c7418e5aa19d4821cf5278))
+
 # [3.2.0](https://github.com/thomas-forte/styles/compare/v3.1.0...v3.2.0) (2026-11-06)
 
 
