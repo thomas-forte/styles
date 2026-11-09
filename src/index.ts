@@ -27,6 +27,11 @@ export {
   type ButtonColorScheme,
   type ButtonSize,
 } from "./buttons/Button";
+export {
+  ButtonGroup,
+  type ButtonGroupOption,
+  type ButtonGroupProps,
+} from "./buttons/ButtonGroup";
 export { IconButton, type IconButtonProps } from "./buttons/IconButton";
 export {
   ShowHideButton,
