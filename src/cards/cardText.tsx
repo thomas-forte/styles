@@ -4,7 +4,7 @@ import { Body } from "../typography/Body";
 import { Title } from "../typography/Title";
 import { CardTitleActions, type CardTitleAction } from "./CardTitleActions";
 
-export const resolveCardTitle = (value: ReactNode) => {
+export const resolveCardTitle = (value: ReactNode, to?: string) => {
   if (value == null || value === false) {
     return undefined;
   }
@@ -12,6 +12,7 @@ export const resolveCardTitle = (value: ReactNode) => {
     return (
       <Title
         text={value}
+        to={to}
         as="h4"
       />
     );
