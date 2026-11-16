@@ -1,6 +1,8 @@
 import { type ReactNode } from "react";
 import { Dialog, DialogPanel, DialogTitle } from "@headlessui/react";
 
+import { Title } from "../typography/Title";
+
 export type DialogifyProps = {
   title: string;
   /**
@@ -36,10 +38,13 @@ export const Dialogify = ({
               className="w-full max-w-md rounded-xl bg-white/5 p-6 backdrop-blur-2xl duration-300 ease-out data-closed:transform-[scale(95%)] data-closed:opacity-0"
             >
               <DialogTitle
-                as="h3"
-                className="text-base/7 font-medium text-white"
+                as="div"
+                className="mb-4"
               >
-                {title}
+                <Title
+                  as="h3"
+                  text={title}
+                />
               </DialogTitle>
               {children}
             </DialogPanel>
