@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+# [3.5.0](https://github.com/thomas-forte/styles/compare/v3.4.0...v3.5.0) (2026-11-16)
+
+
+### Features
+
+* optional way to add a link to resolving title string ([#30](https://github.com/thomas-forte/styles/issues/30)) ([eba922e](https://github.com/thomas-forte/styles/commit/eba922ede556cd284d8b749b4949eb4fe7f2da3c))
+
 # [3.4.0](https://github.com/thomas-forte/styles/compare/v3.3.2...v3.4.0) (2026-11-09)
 
 
