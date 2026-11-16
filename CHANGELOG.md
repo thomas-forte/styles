@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.5.1](https://github.com/thomas-forte/styles/compare/v3.5.0...v3.5.1) (2026-11-16)
+
+
+### Bug Fixes
+
+* changing dialog title to a title instance ([#31](https://github.com/thomas-forte/styles/issues/31)) ([103a054](https://github.com/thomas-forte/styles/commit/103a054b672544bb09a516d70db2495b5fe84f13))
+
 # [3.5.0](https://github.com/thomas-forte/styles/compare/v3.4.0...v3.5.0) (2026-11-16)
 
 
