@@ -13,6 +13,8 @@ import { Loading } from "../feedback/Loading";
 type SteelCardProps = CardProps & {
   /** String becomes {@link Title}; nodes render as-is. */
   title?: ReactNode;
+  /** When provided, the title will be a link to the given path, when title is a string. */
+  titleTo?: string;
   /** String becomes {@link Body}; nodes render as-is. */
   subtitle?: ReactNode;
   /** Skip the header divider. Defaults to `false` when a header is present. */
@@ -32,12 +34,13 @@ export const SteelCard = ({
   className,
   children,
   title,
+  titleTo,
   subtitle,
   hideHr,
   actions,
   isLoading = false,
 }: SteelCardProps) => {
-  const resolvedTitle = resolveCardTitle(title);
+  const resolvedTitle = resolveCardTitle(title, titleTo);
   const resolvedSubtitle = resolveCardSubtitle(subtitle);
   const resolvedActions = resolveCardActions(actions);
   const hasHeader =
