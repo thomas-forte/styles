@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.5.2](https://github.com/thomas-forte/styles/compare/v3.5.1...v3.5.2) (2026-11-17)
+
+
+### Bug Fixes
+
+* adding sizes to dialogs ([#32](https://github.com/thomas-forte/styles/issues/32)) ([61202b1](https://github.com/thomas-forte/styles/commit/61202b1153f627ab9a6d6948814cd28644222a6f))
+
 ## [3.5.1](https://github.com/thomas-forte/styles/compare/v3.5.0...v3.5.1) (2026-11-16)
 
 
