@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+# [3.6.0](https://github.com/thomas-forte/styles/compare/v3.5.2...v3.6.0) (2026-11-19)
+
+
+### Features
+
+* Error styling on Body and fixing cursor on breadcrumbs ([#33](https://github.com/thomas-forte/styles/issues/33)) ([aa313c6](https://github.com/thomas-forte/styles/commit/aa313c6f5861591d9f821ed5f664bdc0d3d94fcf))
+
 ## [3.5.2](https://github.com/thomas-forte/styles/compare/v3.5.1...v3.5.2) (2026-11-17)
 
 
