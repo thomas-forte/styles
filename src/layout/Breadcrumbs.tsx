@@ -59,7 +59,7 @@ export const Breadcrumbs = ({ items }: BreadcrumbsProps) => {
               ) : (
                 <span
                   aria-current="page"
-                  className="ml-4 text-sm font-medium text-slate-200"
+                  className="ml-4 text-sm font-medium text-slate-200 select-none"
                 >
                   {item.name}
                 </span>
